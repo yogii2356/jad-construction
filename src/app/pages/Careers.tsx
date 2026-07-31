@@ -186,7 +186,7 @@ export function Careers() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:border-[#C9974D] focus:outline-none focus:ring-2 focus:ring-[#C9974D]/20 transition-all font-['Inter']"
-                      placeholder="Jane Doe"
+                      placeholder="Enter your name"
                     />
                   </div>
 
