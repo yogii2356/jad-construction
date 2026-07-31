@@ -114,6 +114,16 @@ export function Navbar() {
               Contact
             </Link>
             <Link
+              to="/careers"
+              className={`font-['Inter'] font-medium transition-colors duration-300 ${
+                location.pathname === '/careers'
+                  ? 'text-[#C9974D]'
+                  : 'text-[#A8A29E] hover:text-white'
+              }`}
+            >
+              Careers
+            </Link>
+            <Link
               to="/contact"
               className="px-6 py-2.5 bg-gradient-to-r from-[#C9974D] to-[#B8863C] text-white font-['Inter'] font-semibold rounded-lg hover:shadow-lg hover:shadow-[#C9974D]/25 transition-all duration-300 relative overflow-hidden group"
             >
@@ -191,6 +201,12 @@ export function Navbar() {
                 className="block px-4 py-2 font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] hover:bg-[#C9974D]/5 rounded-lg"
               >
                 Contact
+              </Link>
+              <Link
+                to="/careers"
+                className="block px-4 py-2 font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] hover:bg-[#C9974D]/5 rounded-lg"
+              >
+                Careers
               </Link>
               <Link
                 to="/contact"

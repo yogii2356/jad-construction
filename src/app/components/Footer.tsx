@@ -43,6 +43,7 @@ export function Footer() {
               <li><Link to="/services" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">Services</Link></li>
               <li><Link to="/projects" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">Projects</Link></li>
               <li><Link to="/contact" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">Contact</Link></li>
+              <li><Link to="/careers" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">Careers</Link></li>
             </ul>
           </div>
 
