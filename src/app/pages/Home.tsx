@@ -154,7 +154,7 @@ export function Home() {
                 </span>
               </h1>
               <p className="font-['Inter'] text-lg sm:text-xl text-[#A8A29E] mb-8 leading-relaxed">
-                JAD Consultants — formerly Jay Aedi Dev — is a Haldwani-based design and build firm led by engineer Darshan Kumar Bhatt. We start every project with structural planning: foundation design, load calculations, floor layouts. Construction follows from that. Residential, commercial, and multi-unit work across Uttarakhand.
+                We seamlessly integrate architectural design, structural engineering, precise surveying, 3D visualization, and construction management under one roof. By combining technical precision with advanced digital modeling, we transform complex concepts into buildable, cost-efficient realities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -180,16 +180,16 @@ export function Home() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">5+</div>
+                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">10+</div>
                 <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Years in Practice</div>
               </div>
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">10+</div>
+                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">100+</div>
                 <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Design Concepts</div>
               </div>
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 col-span-2 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">Haldwani</div>
-                <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Uttarakhand</div>
+                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">Haldwani, Almora </div>
+                <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Uttarakhand,Delhi</div>
               </div>
             </motion.div>
           </div>
@@ -230,15 +230,35 @@ export function Home() {
               <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-6 leading-tight">
                 About JAD Consultants
               </h2>
-              <p className="font-['Inter'] text-lg text-[#A8A29E] mb-8 leading-relaxed">
-                JAD Consultants is the new identity of Jay Aedi Dev, a Haldwani-based design and construction practice built on engineering fundamentals. Every project starts with proper structural planning — foundation design, load calculations, floor plans — before a single wall goes up. Led by Darshan Kumar Bhatt, JAD Consultants combines architectural design with hands-on construction management, so clients get one accountable team from blueprint to handover rather than juggling a separate architect, structural engineer, and contractor.
+              <p className="font-['Inter'] text-lg text-[#A8A29E] mb-6 leading-relaxed">
+                JAD Consultants is led by partners with deep expertise in design and execution, bringing together years of hands-on industry experience. We deliver integrated design, engineering, and construction solutions, eliminating the friction of managing multiple vendors by providing a single point of accountability from blueprint to handover.
               </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#C9974D] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-['Playfair_Display'] font-semibold text-white text-lg mb-1">Our Philosophy</h3>
-                    <p className="font-['Inter'] text-[#A8A29E]/90 text-sm">"We don't just design how a building looks — we engineer how it stands."</p>
+              <div className="space-y-3 mb-8">
+                <h3 className="font-['Playfair_Display'] font-semibold text-white text-xl mb-3">Core Disciplines</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-['Inter'] text-sm text-[#A8A29E]">
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#C9974D] font-bold">•</span>
+                    <span><strong className="text-white">Construction:</strong> Full-scale site management and execution.</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#C9974D] font-bold">•</span>
+                    <span><strong className="text-white">Architecture:</strong> Functional and aesthetic spatial design.</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#C9974D] font-bold">•</span>
+                    <span><strong className="text-white">Structural:</strong> Analysis and design of structure as per IS codes.</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#C9974D] font-bold">•</span>
+                    <span><strong className="text-white">Surveying:</strong> Precise land mapping and site analysis.</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#C9974D] font-bold">•</span>
+                    <span><strong className="text-white">3D Visualization:</strong> Photorealistic digital renderings.</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#C9974D] font-bold">•</span>
+                    <span><strong className="text-white">Interior & Exterior:</strong> Complete indoor and outdoor visualization with modern to classic designs.</span>
                   </div>
                 </div>
               </div>
@@ -374,52 +394,10 @@ export function Home() {
         </div>
       </section>
 
-      {/* Process */}
-      <section className="py-24 bg-[#0D0C0B]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
-              <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Process</span>
-            </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
-              Our Process
-            </h2>
-          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { icon: Award, title: 'Consultation & Site Assessment', desc: 'Understanding the plot, requirements, and budget' },
-              { icon: Shield, title: 'Structural & Architectural Design', desc: 'Foundation plans, floor plans, elevation design' },
-              { icon: Users, title: 'Approvals', desc: 'Documentation for regulatory compliance' },
-              { icon: TrendingUp, title: 'Construction', desc: 'Execution with ongoing structural and quality checks' },
-              { icon: CheckCircle2, title: 'Handover', desc: 'Final inspection and project delivery' },
-            ].map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-[#141210]/60 backdrop-blur-sm border border-[#C9974D]/12 rounded-xl p-6 text-center hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all hover:-translate-y-1 shadow-md shadow-black/15 hover:shadow-lg hover:shadow-black/25 group"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:shadow-lg group-hover:shadow-[#C9974D]/25 transition-all">
-                  <item.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-['Playfair_Display'] font-semibold text-xl text-white mb-2">{item.title}</h3>
-                <p className="font-['Inter'] text-[#A8A29E] text-sm">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Statistics Counter */}
-      <section className="py-20 bg-[#0D0C0B] relative overflow-hidden border-y border-[#C9974D]/10">
+      {/* <section className="py-20 bg-[#0D0C0B] relative overflow-hidden border-y border-[#C9974D]/10">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-20"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -446,78 +424,9 @@ export function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Engineering & Planning Section */}
-      <section className="py-24 bg-[#0F1115]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
-                <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Engineering & Planning</span>
-              </div>
-              <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-6">
-                Planning Before We Build
-              </h2>
-              <p className="font-['Inter'] text-lg text-[#A8A29E] mb-8 leading-relaxed">
-                Every project starts with foundation and floor plans drawn in-house by our engineering team — not outsourced. The structural work is done before construction begins, which is how we avoid costly rework mid-build. You can view two sample plan documents below.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href={foundationPlanPdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-[#141210]/60 border border-[#C9974D]/15 rounded-xl hover:bg-[#C9974D]/10 hover:border-[#C9974D]/40 transition-all group w-full"
-                >
-                  <div className="flex items-center gap-3">
-                    <FileText className="w-6 h-6 text-[#C9974D]" />
-                    <div className="text-left">
-                      <div className="font-['Playfair_Display'] font-semibold text-white group-hover:text-[#C9974D] transition-colors">Foundation Plan</div>
-                      <div className="font-['Inter'] text-xs text-gray-400">PDF Document</div>
-                    </div>
-                  </div>
-                  <Download className="w-5 h-5 text-gray-400 group-hover:text-[#C9974D] transition-colors ml-4" />
-                </a>
-                
-                <a
-                  href={groundFloorPlanPdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-[#141210]/60 border border-[#C9974D]/15 rounded-xl hover:bg-[#C9974D]/10 hover:border-[#C9974D]/40 transition-all group w-full"
-                >
-                  <div className="flex items-center gap-3">
-                    <FileText className="w-6 h-6 text-[#C9974D]" />
-                    <div className="text-left">
-                      <div className="font-['Playfair_Display'] font-semibold text-white group-hover:text-[#C9974D] transition-colors">Ground Floor Plan</div>
-                      <div className="font-['Inter'] text-xs text-gray-400">PDF Document</div>
-                    </div>
-                  </div>
-                  <Download className="w-5 h-5 text-gray-400 group-hover:text-[#C9974D] transition-colors ml-4" />
-                </a>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative rounded-2xl overflow-hidden border border-[#C9974D]/12 bg-[#141210]/60 p-4"
-            >
-              <div className="aspect-[4/3] bg-[#0D0C0B] rounded-xl flex flex-col items-center justify-center border border-white/5">
-                <FileText className="w-20 h-20 text-gray-600 mb-4" />
-                <div className="font-['Playfair_Display'] text-gray-500 font-medium">Technical Plans Preview</div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Client Testimonials */}
       <section className="py-24 bg-[#141210]">

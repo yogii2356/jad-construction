@@ -53,7 +53,7 @@ export function ServiceDetail() {
     'structure-analysis-and-design': {
       title: 'Structure Analysis and Design',
       subtitle: 'Advanced structural design and analysis for complex projects',
-      description: 'We provide innovative structural engineering solutions for the most challenging construction projects. From high-rise buildings to industrial facilities, we ensure structural integrity through rigorous analysis and cutting-edge design methodologies.',
+      description: 'We deliver comprehensive structural engineering solutions engineered for structural integrity, structural safety, and long-term asset durability. Our firm integrates advanced mechanics, material science, and computational modeling to design optimized structural frameworks for complex projects. From initial schematic concepts to final structural validation, we ensure your investments safely resist all static, dynamic, and environmental forces while strictly adhering to safety and serviceability limit states.',
       heroImage: 'https://images.unsplash.com/photo-1763405739542-02991ab5416c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwc3Vuc2V0JTIwaW5kdXN0cmlhbHxlbnwxfHx8fDE3NzgzMzI5OTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
       process: [
         { step: 'Site Assessment', desc: 'Geotechnical investigation and soil analysis' },
@@ -64,12 +64,8 @@ export function ServiceDetail() {
         { step: 'Post-Construction', desc: 'Structural testing and certification' },
       ],
       technologies: [
-        'Finite Element Analysis (FEA)',
-        'Seismic Design Software',
-        '3D Structural Modeling',
-        'Wind Load Analysis Tools',
-        'Foundation Design Systems',
-        'Advanced CAD/BIM Integration',
+        'Software: Etabs, Staad-Pro, Revit, RCDC, SAFE, AutoCAD, Idea-Statica',
+        'Codes: Indian codes',
       ],
       gallery: [
         'https://images.unsplash.com/photo-1763405739542-02991ab5416c?w=600',
@@ -315,9 +311,76 @@ export function ServiceDetail() {
             <h2 className="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl text-white mb-6">
               Detailed Overview
             </h2>
-            <p className="font-['Inter'] text-lg text-[#A8A29E] leading-relaxed">
+            <p className="font-['Inter'] text-lg text-[#A8A29E] leading-relaxed mb-10">
               {service.description}
             </p>
+
+            {servicePath === 'structure-analysis-and-design' && (
+              <div className="mt-8 bg-[#0D0C0B]/90 border border-[#C9974D]/25 rounded-2xl p-6 sm:p-8 shadow-2xl">
+                <h3 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-2 text-center">
+                  Structural Design & Analysis Framework
+                </h3>
+                <p className="font-['Inter'] text-sm text-[#A8A29E] text-center mb-8">
+                  Core Engineering & Limit State Methodology Workflow
+                </p>
+
+                {/* Diagram graphic */}
+                <div className="font-mono text-xs sm:text-sm text-[#DEB06A] bg-[#141210] p-6 rounded-xl border border-[#C9974D]/20 overflow-x-auto shadow-inner leading-relaxed">
+                  <div className="text-center font-bold text-white mb-4 py-2 bg-[#C9974D]/15 border border-[#C9974D]/30 rounded">
+                    STRUCTURAL DESIGN PHASE
+                  </div>
+                  <div className="text-center text-[#C9974D] my-2 font-bold">▼</div>
+                  <div className="text-center font-bold text-white mb-4 py-2.5 bg-[#C9974D]/15 border border-[#C9974D]/30 rounded">
+                    LOAD PATH ANALYSIS & VECTOR SUMMATION (ΣF = 0, ΣM = 0)
+                  </div>
+                  <div className="text-center text-[#C9974D] my-2 font-bold">▼</div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div className="bg-[#0D0C0B] p-4 rounded border border-[#C9974D]/30">
+                      <div className="font-bold text-white text-sm border-b border-[#C9974D]/20 pb-2 mb-3">
+                        STRENGTH LIMIT STATES (ULS)
+                      </div>
+                      <ul className="space-y-1.5 text-[#A8A29E] font-sans text-xs sm:text-sm">
+                        <li className="flex items-center gap-2"><span className="text-[#C9974D]">•</span> Yield Strength</li>
+                        <li className="flex items-center gap-2"><span className="text-[#C9974D]">•</span> Buckling Resistance</li>
+                        <li className="flex items-center gap-2"><span className="text-[#C9974D]">•</span> Shear & Flexural Capacity</li>
+                      </ul>
+                    </div>
+                    <div className="bg-[#0D0C0B] p-4 rounded border border-[#C9974D]/30">
+                      <div className="font-bold text-white text-sm border-b border-[#C9974D]/20 pb-2 mb-3">
+                        SERVICEABILITY LIMIT STATES (SLS)
+                      </div>
+                      <ul className="space-y-1.5 text-[#A8A29E] font-sans text-xs sm:text-sm">
+                        <li className="flex items-center gap-2"><span className="text-[#C9974D]">•</span> Elastic Deflection Limits</li>
+                        <li className="flex items-center gap-2"><span className="text-[#C9974D]">•</span> Vibrational Resonance</li>
+                        <li className="flex items-center gap-2"><span className="text-[#C9974D]">•</span> Crack Width Controls</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Explanation text */}
+                <div className="mt-8 space-y-6 font-['Inter'] text-sm sm:text-base text-[#A8A29E]">
+                  <div>
+                    <h4 className="font-['Playfair_Display'] font-semibold text-white text-lg mb-2">1. Structural Design Phase</h4>
+                    <p className="leading-relaxed">Translating architectural blueprints into rigorous 3D computational structural models, identifying all static, dynamic, wind, and seismic forces acting on the building in compliance with relevant IS codes.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-['Playfair_Display'] font-semibold text-white text-lg mb-2">2. Load Path Analysis & Vector Summation ($\Sigma F = 0, \Sigma M = 0$)</h4>
+                    <p className="leading-relaxed">Tracking force transfer through continuous load paths (Slabs $\rightarrow$ Beams $\rightarrow$ Columns $\rightarrow$ Footings $\rightarrow$ Soil) while enforcing strict static equilibrium laws ($\Sigma F = 0, \Sigma M = 0$) to ensure zero net unbalanced forces or rotational moments.</p>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                    <div className="bg-[#141210] p-5 rounded-xl border border-[#C9974D]/15">
+                      <h5 className="font-['Playfair_Display'] font-semibold text-white text-base mb-2">Strength Limit States (ULS)</h5>
+                      <p className="text-xs sm:text-sm leading-relaxed text-[#A8A29E]/90">Prevents structural failure and catastrophic collapse. Validates <strong>Yield Strength</strong> under maximum stress, <strong>Buckling Resistance</strong> for tall compression members, and <strong>Shear & Flexural Capacity</strong> against heavy bending and internal forces.</p>
+                    </div>
+                    <div className="bg-[#141210] p-5 rounded-xl border border-[#C9974D]/15">
+                      <h5 className="font-['Playfair_Display'] font-semibold text-white text-base mb-2">Serviceability Limit States (SLS)</h5>
+                      <p className="text-xs sm:text-sm leading-relaxed text-[#A8A29E]/90">Ensures long-term asset performance and daily occupant comfort. Controls <strong>Elastic Deflection Limits</strong> to eliminate floor sagging, restricts <strong>Vibrational Resonance</strong>, and strictly manages <strong>Crack Widths</strong> to prevent internal rebar corrosion.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </motion.div>
         </div>
       </section>
@@ -378,11 +441,11 @@ export function ServiceDetail() {
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Technology</span>
             </div>
             <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
-              Equipment & Technology Used
+              Software and Codes
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className={`grid grid-cols-1 ${service.technologies.length <= 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-3'} gap-6`}>
             {service.technologies.map((tech: string, index: number) => (
               <motion.div
                 key={index}
@@ -393,7 +456,7 @@ export function ServiceDetail() {
                 className="bg-[#0D0C0B]/60 backdrop-blur-sm border border-[#C9974D]/12 rounded-xl p-6 hover:border-[#C9974D]/35 hover:-translate-y-1 shadow-md shadow-black/15 hover:shadow-xl hover:shadow-black/25 transition-all duration-300 flex items-center gap-3"
               >
                 <CheckCircle2 className="w-6 h-6 text-[#C9974D] flex-shrink-0" />
-                <span className="font-['Inter'] text-[#A8A29E]/90">{tech}</span>
+                <span className="font-['Inter'] text-white font-medium text-base">{tech}</span>
               </motion.div>
             ))}
           </div>

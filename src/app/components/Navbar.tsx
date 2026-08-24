@@ -75,7 +75,13 @@ export function Navbar() {
               About
             </Link>
             <div className="relative group">
-              <button className="font-['Inter'] font-medium text-[#A8A29E] hover:text-white transition-colors duration-300 flex items-center gap-1">
+              <button 
+                className={`font-['Inter'] font-medium transition-colors duration-300 flex items-center gap-1 ${
+                  location.pathname.startsWith('/services')
+                    ? 'text-[#C9974D]'
+                    : 'text-[#A8A29E] hover:text-white'
+                }`}
+              >
                 Services
                 <ChevronDown className="w-4 h-4" />
               </button>

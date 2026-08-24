@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import Masonry from 'react-responsive-masonry';
-import { MapPin, Calendar, Award } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
 import { projectsData, CATEGORIES } from '../data/projectsData';
 
 export function Projects() {
@@ -147,35 +147,6 @@ export function Projects() {
               </button>
             </div>
           )}
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-24 bg-[#0D0C0B] border-y border-[#C9974D]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#141210]/80 border border-[#C9974D]/15 rounded-2xl p-10 sm:p-12 shadow-xl shadow-black/40">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { icon: Award, number: '10+', label: 'Design Concepts' },
-                { icon: MapPin, number: '15', label: 'States Served' },
-                { icon: Calendar, number: '25+', label: 'Years Experience' },
-                { icon: Award, number: '98%', label: 'Client Satisfaction' },
-              ].map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center"
-                >
-                  <stat.icon className="w-10 h-10 text-[#C9974D] mx-auto mb-4" />
-                  <div className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl brand-gradient-text mb-2">{stat.number}</div>
-                  <div className="font-['Inter'] font-medium text-[#A8A29E] tracking-wide uppercase text-xs">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
     </div>

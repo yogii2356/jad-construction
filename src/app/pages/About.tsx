@@ -15,24 +15,31 @@ export function About() {
   const team = [
     {
       name: 'Darshan Kumar Bhatt',
-      position: 'Founder & Principal Engineer',
+      education: 'M.tech in Structure',
+      experience : '10+ years' ,
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
+    },
+    {
+      name: 'Er. Ajay Singh Bhoj',
+      education: 'M.tech in Structure',
+      experience : '5+ years',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
     },
   ];
 
-  const machinery = [
-    { name: 'Concrete Mixers', count: '2+' },
-    { name: 'Excavators', count: '1+' },
-    { name: 'Scaffolding Sets', count: '4+' },
-    { name: 'Transit Mixers', count: '1+' },
-  ];
+  // const machinery = [
+  //   { name: 'Concrete Mixers', count: '2+' },
+  //   { name: 'Excavators', count: '1+' },
+  //   { name: 'Scaffolding Sets', count: '4+' },
+  //   { name: 'Transit Mixers', count: '1+' },
+  // ];
 
   const timeline = [
-    { year: '2020', title: 'Jay Aedi Dev Founded', desc: 'Started taking on residential design and construction work in Haldwani, Uttarakhand' },
-    { year: '2021', title: 'First Structural Plans', desc: 'Began producing in-house foundation and floor plans rather than outsourcing structural drawings' },
-    { year: '2022', title: 'Commercial Work', desc: 'First mixed-use and commercial project designs completed' },
-    { year: '2024', title: 'Design Portfolio Grows', desc: 'Expanded architectural elevation portfolio across residential typologies' },
-    { year: '2025', title: 'Rebranded to JAD Consultants', desc: 'Relaunched under JAD Consultants to reflect broader design-build scope' },
+    { year: '2019', title: 'Jay Aedi Dev Founded', desc: 'Started taking on residential design and construction work in Haldwani, Uttarakhand' },
+    { year: '2020', title: 'First Structural Plans', desc: 'Began producing in-house foundation and floor plans rather than outsourcing structural drawings' },
+    { year: '2021', title: 'Commercial Work', desc: 'First mixed-use and commercial project designs completed' },
+    { year: '2022', title: 'Design Portfolio Grows', desc: 'Expanded architectural elevation portfolio across residential typologies' },
+    { year: '2025-26', title: 'Rebranded to JAD Consultants', desc: 'Relaunched under JAD Consultants to reflect broader design-build scope' },
   ];
 
   return (
@@ -65,9 +72,38 @@ export function About() {
                 Haldwani, Uttarakhand
               </span>
             </h1>
-            <p className="font-['Inter'] text-xl text-[#A8A29E] leading-relaxed">
-              JAD Consultants is the rebranded name of Jay Aedi Dev, a design-and-build practice started in Haldwani, Uttarakhand. We handle structural engineering and architectural design ourselves, rather than splitting those roles across different firms. The idea is simple: if the same team that draws the foundation plan also manages construction, fewer things fall through the cracks.
+            <p className="font-['Inter'] text-xl text-[#A8A29E] leading-relaxed mb-8">
+              JAD Consultants is led by partners with deep expertise in design and execution, bringing together years of hands-on industry experience. We deliver integrated design, engineering, and construction solutions, eliminating the friction of managing multiple vendors by providing a single point of accountability from blueprint to handover.
             </p>
+            <div className="bg-[#141210]/80 backdrop-blur-md border border-[#C9974D]/20 rounded-2xl p-6 sm:p-8">
+              <h2 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-6">Core Disciplines</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-['Inter'] text-sm sm:text-base text-[#A8A29E]">
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#C9974D] font-bold text-lg">•</span>
+                  <span><strong className="text-white font-semibold">Construction:</strong> Full-scale site management and execution.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#C9974D] font-bold text-lg">•</span>
+                  <span><strong className="text-white font-semibold">Architecture:</strong> Functional and aesthetic spatial design.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#C9974D] font-bold text-lg">•</span>
+                  <span><strong className="text-white font-semibold">Structural:</strong> Analysis and design of structure as per IS codes.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#C9974D] font-bold text-lg">•</span>
+                  <span><strong className="text-white font-semibold">Surveying:</strong> Precise land mapping and site analysis.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#C9974D] font-bold text-lg">•</span>
+                  <span><strong className="text-white font-semibold">3D Visualization:</strong> Photorealistic digital renderings.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#C9974D] font-bold text-lg">•</span>
+                  <span><strong className="text-white font-semibold">Interior & Exterior:</strong> Complete indoor and outdoor visualization with modern to classic designs.</span>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -137,7 +173,7 @@ export function About() {
               </div>
               <h2 className="font-['Playfair_Display'] font-bold text-3xl text-white mb-4">Our Approach</h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E]/95 leading-relaxed">
-                We think structural design and construction management should come from the same team. When the engineer who designed the foundation is also watching construction, issues get caught earlier and fixed faster. Every project starts with a proper foundation plan and structural drawings — that's the baseline, not an add-on.
+                We provide complete architectural and engineering solutions under one roof. By integrating planning, surveying, structural design, construction management, and landscaping into a unified workflow, we eliminate communication gaps between separate firms. When the team that drafts your initial layout and maps your terrain is the same team managing construction and final site landscaping, your project benefits from total cohesion, faster problem-solving, and a seamless transition from concept to completion.
               </p>
             </motion.div>
 
@@ -152,7 +188,7 @@ export function About() {
               </div>
               <h2 className="font-['Playfair_Display'] font-bold text-3xl text-white mb-4">Where We're Headed</h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E]/95 leading-relaxed">
-                We want to keep growing in Uttarakhand, take on more complex structural projects, and develop a track record in commercial and multi-unit construction. We're not chasing volume — we'd rather do fewer projects properly than spread thin across too many sites at once.
+                We are building the future of comprehensive project delivery. In Uttarakhand, our vision is to be the premier, single-source consultancy that handles every phase of development under one roof. Nationally, we are expanding our footprint. We want our diverse portfolio of planning, engineering, and landscaping success stories to open doors across the country, making us a sought-after partner for major projects throughout India.
               </p>
             </motion.div>
           </div>
@@ -239,14 +275,15 @@ export function About() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C0B]/90 via-transparent to-transparent z-10 pointer-events-none"></div>
                 </div>
                 <h3 className="font-['Playfair_Display'] font-bold text-xl text-white mb-1">{member.name}</h3>
-                <p className="font-['Inter'] text-[#A8A29E]/90">{member.position}</p>
+                <p className="font-['Inter'] text-[#A8A29E]/90">{member.education}</p>
+                <p className="font-['Inter'] text-[#A8A29E]/90">{member.experience}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Machinery & Equipment */}
+      {/* Machinery & Equipment
       <section className="py-24 bg-[#141210]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -296,34 +333,41 @@ export function About() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C0B]/95 to-transparent z-10 pointer-events-none"></div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Safety Standards */}
-      <section className="py-24 bg-[#0D0C0B]">
+      {/* Site Safety section commented out */}
+      {/* 
+      <section className="py-24 bg-[#141210]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
+              <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Safety Standards</span>
+            </div>
+            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+              Site Safety
+            </h2>
+            <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
+              Rigorous protocols ensure worker well-being and project integrity on every site.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
-                <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Safety & Compliance</span>
-              </div>
-              <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-6">
-                Site Safety
-              </h2>
-              <p className="font-['Inter'] text-lg text-[#A8A29E] mb-8">
-                We prioritize site safety through structured protocols and rigorous adherence to industry standards, ensuring the well-being of our workforce and the integrity of our projects.
-              </p>
               <div className="space-y-4">
                   {[
                     'PPE required on all active sites',
                     'Daily site inspection before work begins',
                     'Regular safety briefings with crew',
                     'Emergency response procedures in place',
-                    // Removed - re-add once credential/stat is confirmed with documentation
-                    // 'Full insurance coverage on all projects',
                   ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-[#C9974D] flex-shrink-0" />
@@ -331,7 +375,7 @@ export function About() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </motion.div> 
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -344,27 +388,13 @@ export function About() {
                 <div className="font-['Playfair_Display'] font-bold text-4xl text-white mb-2">All</div>
                 <div className="font-['Inter'] text-white/90">Projects Insured</div>
               </div>
-              <div className="bg-[#141210]/60 backdrop-blur-sm border border-[#C9974D]/12 rounded-xl p-8 text-center hover:border-[#C9974D]/35 hover:-translate-y-1 shadow-md shadow-black/15 transition-all duration-300">
-                <Users className="w-12 h-12 text-[#C9974D] mx-auto mb-4" />
-                <div className="font-['Playfair_Display'] font-bold text-4xl text-white mb-2">Daily</div>
-                <div className="font-['Inter'] text-[#A8A29E]/90">Site Inspections</div>
-              </div>
-              {/* Removed - re-add once credential/stat is confirmed with documentation
-              <div className="bg-[#141210]/60 backdrop-blur-sm border border-[#C9974D]/12 rounded-xl p-8 text-center hover:border-[#C9974D]/35 hover:-translate-y-1 shadow-md shadow-black/15 transition-all duration-300">
-                <Award className="w-12 h-12 text-[#C9974D] mx-auto mb-4" />
-                <div className="font-['Playfair_Display'] font-bold text-4xl text-white mb-2">0</div>
-                <div className="font-['Inter'] text-[#A8A29E]/90">Reported Incidents</div>
-              </div>
-              <div className="bg-[#141210]/60 backdrop-blur-sm border border-[#C9974D]/12 rounded-xl p-8 text-center hover:border-[#C9974D]/35 hover:-translate-y-1 shadow-md shadow-black/15 transition-all duration-300">
-                <TrendingUp className="w-12 h-12 text-[#C9974D] mx-auto mb-4" />
-                <div className="font-['Playfair_Display'] font-bold text-4xl text-white mb-2">100%</div>
-                <div className="font-['Inter'] text-[#A8A29E]/90">Compliance Rate</div>
-              </div>
-              */}
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> 
+      */}
     </div>
   );
 }
+
+
