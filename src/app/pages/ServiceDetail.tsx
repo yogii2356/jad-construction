@@ -386,7 +386,7 @@ export function ServiceDetail() {
       </section>
 
       {/* Construction Process Timeline */}
-      <section className="py-24 bg-[#0D0C0B]">
+      {/* <section className="py-24 bg-[#0D0C0B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -426,7 +426,7 @@ export function ServiceDetail() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Equipment & Technology */}
       <section className="py-24 bg-[#141210]">

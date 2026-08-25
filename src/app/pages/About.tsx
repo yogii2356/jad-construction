@@ -25,6 +25,12 @@ export function About() {
       experience : '5+ years',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
     },
+    {
+      name: 'Neha Sinha',
+      education: 'Bachelor of Design',
+      experience : '7+ Years of Experience in Interior designing and Landscape design.',
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
+    },
   ];
 
   // const machinery = [
