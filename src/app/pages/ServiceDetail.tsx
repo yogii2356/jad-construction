@@ -21,7 +21,7 @@ export function ServiceDetail() {
     'construction': {
       title: 'Construction',
       subtitle: 'Complete construction solutions from foundation to finish',
-      description: 'Our building construction services encompass the entire lifecycle of a project, from initial planning and design to final handover. We specialize in residential, commercial, and institutional buildings, delivering quality craftsmanship with precision engineering.',
+      description: 'We deliver exceptional craftsmanship, on-time project completion, and uncompromising safety. Whether it is a modern home or a large-scale commercial project, we tailor our structural, engineering, and renovation services to fit your budget and timeline perfectly.',
       heroImage: 'https://images.unsplash.com/photo-1652876256405-3902cc201b22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZyUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NzgyNzE2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       process: [
         { step: 'Planning & Design', desc: 'Detailed architectural planning and engineering design' },
@@ -32,12 +32,9 @@ export function ServiceDetail() {
         { step: 'Quality Inspection', desc: 'Final inspection, testing, and handover' },
       ],
       technologies: [
-        'Building Information Modeling (BIM)',
-        'Advanced Construction Management Software',
-        'Energy-Efficient Building Systems',
-        'Smart Building Technologies',
-        'Green Building Practices',
-        'Automated Quality Control Systems',
+        'Skilled workforce',
+        'Advanced construction equipment',
+        'Project management software',
       ],
       gallery: [
         'https://images.unsplash.com/photo-1652876256405-3902cc201b22?w=600',
@@ -81,16 +78,16 @@ export function ServiceDetail() {
     'surveying': {
       title: 'Surveying',
       subtitle: 'Professional surveying and mapping for construction projects',
-      description: 'We provide comprehensive survey and geospatial services for government infrastructure projects. Using state-of-the-art equipment, we deliver accurate data for informed decision-making in public sector developments.',
+      description: 'Protect your investments with certified, pinpoint-accurate property data. We provide comprehensive land surveying services—including boundary markers, ALTA/NSPS title surveys, and topographic mapping—for homeowners, developers, and real estate professionals. We eliminate the guesswork so you can build, buy, or permit with absolute legal confidence.',
       heroImage: 'https://images.unsplash.com/photo-1758798349125-5c297b18b8b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB3b3JrZXJzJTIwdGVhbSUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3ODMzMjk5Mnww&ixlib=rb-4.1.0&q=80&w=1080',
-      process: [
-        { step: 'Project Briefing', desc: 'Understanding survey requirements and objectives' },
-        { step: 'Field Survey', desc: 'Data collection using GPS, total stations, and drones' },
-        { step: 'Data Processing', desc: 'Processing and analyzing collected survey data' },
-        { step: 'Mapping & Modeling', desc: 'Creating topographic maps and 3D terrain models' },
-        { step: 'Report Generation', desc: 'Comprehensive survey reports with recommendations' },
-        { step: 'Delivery & Support', desc: 'Data delivery and ongoing technical support' },
-      ],
+      // process: [
+      //   { step: 'Project Briefing', desc: 'Understanding survey requirements and objectives' },
+      //   { step: 'Field Survey', desc: 'Data collection using GPS, total stations, and drones' },
+      //   { step: 'Data Processing', desc: 'Processing and analyzing collected survey data' },
+      //   { step: 'Mapping & Modeling', desc: 'Creating topographic maps and 3D terrain models' },
+      //   { step: 'Report Generation', desc: 'Comprehensive survey reports with recommendations' },
+      //   { step: 'Delivery & Support', desc: 'Data delivery and ongoing technical support' },
+      // ],
       technologies: [
         'GPS/GNSS Systems',
         'UAV/Drone Surveying',
@@ -113,7 +110,7 @@ export function ServiceDetail() {
     'architecture-planning': {
       title: 'Architecture Planning',
       subtitle: 'Innovative architectural planning tailored to your unique requirements',
-      description: 'Architecture planning is where a project actually takes shape - working through layouts, room proportions, and how the building sits on the plot, before any structural drawings are finalized. We plan around how the space will really be used, not just how it looks in a render.',
+      description: 'Great architecture tells a unique story. We specialize in luxury residential designs, cutting-edge commercial spaces, and comprehensive urban planning. By balancing contemporary aesthetics with functional blueprints, we craft iconic landmarks that elevate the human experience.',
       heroImage: 'https://images.unsplash.com/photo-1768054948628-82319724f0b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWF2eSUyMGNvbnN0cnVjdGlvbiUyMGVxdWlwbWVudCUyMG1hY2hpbmVyeXxlbnwxfHx8fDE3NzgzMzI5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       process: [
         { step: 'Requirements Analysis', desc: 'Understanding industrial processes and facility needs' },
@@ -145,7 +142,7 @@ export function ServiceDetail() {
     '3d-interior-and-exterior': {
       title: '3D Interior and Exterior',
       subtitle: 'High-quality 3D renderings for interior and exterior spaces',
-      description: 'We breathe new life into aging infrastructure through expert renovation and retrofitting services. Whether updating building systems, improving energy efficiency, or seismic strengthening, we preserve architectural character while meeting modern standards.',
+      description: 'We transform ordinary spaces into bespoke, highly functional sanctuaries tailored entirely to your lifestyle. From the initial spatial layout and concept mood boards to comprehensive construction oversight and meticulous final styling, we manage every layer of your renovation or build with utmost transparency and attention to detail. Let us handle the heavy lifting while you enjoy a seamless, stress-free journey to your dream home.',
       heroImage: 'https://images.unsplash.com/photo-1652876256405-3902cc201b22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZyUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NzgyNzE2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       process: [
         { step: 'Building Assessment', desc: 'Comprehensive evaluation of existing conditions' },
@@ -177,7 +174,7 @@ export function ServiceDetail() {
     'landscaping': {
       title: 'Landscaping',
       subtitle: 'Professional landscaping services to enhance outdoor spaces',
-      description: 'Our construction project management services ensure your project is delivered on time, within budget, and to the highest quality standards. We coordinate all aspects of construction, manage risks, and maintain clear communication with stakeholders.',
+      description: 'Keep your property looking pristine and vibrant all year round. We provide comprehensive residential and commercial landscape maintenance, including precision lawn mowing, seasonal yard cleanups, expert hedge trimming, and weed control. Let our reliable, detail-oriented crew take the hard work out of yard work so you can simply sit back and enjoy a beautifully manicured lawn.',
       heroImage: 'https://images.unsplash.com/photo-1763405739542-02991ab5416c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwc3Vuc2V0JTIwaW5kdXN0cmlhbHxlbnwxfHx8fDE3NzgzMzI5OTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
       process: [
         { step: 'Project Initiation', desc: 'Defining scope, objectives, and success criteria' },
