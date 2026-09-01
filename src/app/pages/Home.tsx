@@ -180,7 +180,7 @@ export function Home() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">10+</div>
+                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">7+</div>
                 <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Years in Practice</div>
               </div>
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 shadow-lg shadow-black/25 hover:-translate-y-1">
@@ -188,8 +188,8 @@ export function Home() {
                 <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Design Concepts</div>
               </div>
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 col-span-2 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">Haldwani, Almora </div>
-                <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Uttarakhand,Delhi</div>
+                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">Haldwani, Almora, Delhi </div>
+                {/* <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Uttarakhand,Delhi</div> */}
               </div>
             </motion.div>
           </div>

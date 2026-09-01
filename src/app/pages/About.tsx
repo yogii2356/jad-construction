@@ -31,6 +31,12 @@ export function About() {
       experience : '7+ Years of Experience in Interior designing and Landscape design.',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
     },
+    {
+      name: 'Saket Sah',
+      education: 'B.Arch',
+      experience : '5+ Years of Experience in Architectural design.',
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
+    },
   ];
 
   // const machinery = [
@@ -40,12 +46,13 @@ export function About() {
   //   { name: 'Transit Mixers', count: '1+' },
   // ];
 
-  const timeline = [
+  const timeline = [                  
     { year: '2019', title: 'Jay Aedi Dev Founded', desc: 'Started taking on residential design and construction work in Haldwani, Uttarakhand' },
-    { year: '2020', title: 'First Structural Plans', desc: 'Began producing in-house foundation and floor plans rather than outsourcing structural drawings' },
+    { year: '2020', title: 'First Servay start', desc: 'Started  land and house survey work' },
     { year: '2021', title: 'Commercial Work', desc: 'First mixed-use and commercial project designs completed' },
-    { year: '2022', title: 'Design Portfolio Grows', desc: 'Expanded architectural elevation portfolio across residential typologies' },
-    { year: '2025-26', title: 'Rebranded to JAD Consultants', desc: 'Relaunched under JAD Consultants to reflect broader design-build scope' },
+    { year: '2022', title: 'Registered as Architect', desc: 'Started own Architecture firm' },
+    { year: '2023-24', title: 'Started residency building and interior designing work', desc: 'Started  work on the residential building' },
+    { year: '2025-26', title: 'Rebranded to JAD Consultants', desc: 'Launching JAD Consultants with an expanded service range — covering design, planning, and construction under one roof' },
   ];
 
   return (
