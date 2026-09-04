@@ -49,6 +49,7 @@ export function ServiceDetail() {
     },
     'structure-analysis-and-design': {
       title: 'Structure Analysis and Design',
+      techTitle: 'Software and Codes',
       subtitle: 'Advanced structural design and analysis for complex projects',
       description: 'We deliver comprehensive structural engineering solutions engineered for structural integrity, structural safety, and long-term asset durability. Our firm integrates advanced mechanics, material science, and computational modeling to design optimized structural frameworks for complex projects. From initial schematic concepts to final structural validation, we ensure your investments safely resist all static, dynamic, and environmental forces while strictly adhering to safety and serviceability limit states.',
       heroImage: 'https://images.unsplash.com/photo-1763405739542-02991ab5416c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwc3Vuc2V0JTIwaW5kdXN0cmlhbHxlbnwxfHx8fDE3NzgzMzI5OTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
@@ -109,6 +110,7 @@ export function ServiceDetail() {
     },
     'architecture-planning': {
       title: 'Architecture Planning',
+      techTitle: 'Software and Bye-laws',
       subtitle: 'Innovative architectural planning tailored to your unique requirements',
       description: 'Great architecture tells a unique story. We specialize in luxury residential designs, cutting-edge commercial spaces, and comprehensive urban planning. By balancing contemporary aesthetics with functional blueprints, we craft iconic landmarks that elevate the human experience.',
       heroImage: 'https://images.unsplash.com/photo-1768054948628-82319724f0b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWF2eSUyMGNvbnN0cnVjdGlvbiUyMGVxdWlwbWVudCUyMG1hY2hpbmVyeXxlbnwxfHx8fDE3NzgzMzI5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
@@ -141,6 +143,7 @@ export function ServiceDetail() {
     },
     '3d-interior-and-exterior': {
       title: '3D Interior and Exterior',
+      techTitle: 'Design concepts and software',
       subtitle: 'High-quality 3D renderings for interior and exterior spaces',
       description: 'We transform ordinary spaces into bespoke, highly functional sanctuaries tailored entirely to your lifestyle. From the initial spatial layout and concept mood boards to comprehensive construction oversight and meticulous final styling, we manage every layer of your renovation or build with utmost transparency and attention to detail. Let us handle the heavy lifting while you enjoy a seamless, stress-free journey to your dream home.',
       heroImage: 'https://images.unsplash.com/photo-1652876256405-3902cc201b22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZyUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NzgyNzE2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
@@ -203,38 +206,38 @@ export function ServiceDetail() {
         { q: 'Do you provide progress reports?', a: 'Yes, we provide regular detailed reports including schedules, budgets, and quality metrics.' },
       ],
     },
-    'road-infrastructure': {
-      title: 'Road & Infrastructure',
-      subtitle: 'Building the backbone of modern communities',
-      description: 'We specialize in large-scale infrastructure development including highways, roads, bridges, drainage systems, and utilities. Our infrastructure projects connect communities and support economic growth with durable, sustainable solutions.',
-      heroImage: 'https://images.unsplash.com/photo-1770152626760-3e9f5c59d71b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwc3Vuc2V0JTIwaW5kdXN0cmlhbHxlbnwxfHx8fDE3NzgzMzI5OTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      process: [
-        { step: 'Route Planning', desc: 'Alignment design and environmental assessment' },
-        { step: 'Earthworks', desc: 'Cut and fill operations, soil stabilization' },
-        { step: 'Drainage Systems', desc: 'Storm water management and culvert installation' },
-        { step: 'Pavement Construction', desc: 'Base courses and asphalt/concrete paving' },
-        { step: 'Utilities Installation', desc: 'Water, sewer, and utility infrastructure' },
-        { step: 'Finishing & Safety', desc: 'Road markings, signage, and safety features' },
-      ],
-      technologies: [
-        'GPS-Guided Grading Equipment',
-        'Intelligent Compaction Systems',
-        'Asphalt Paving Machines',
-        'Concrete Batch Plants',
-        'Traffic Management Systems',
-        'Pavement Testing Equipment',
-      ],
-      gallery: [
-        'https://images.unsplash.com/photo-1770152626760-3e9f5c59d71b?w=600',
-        'https://images.unsplash.com/photo-1758127080058-dfe30ed490d9?w=600',
-        'https://images.unsplash.com/photo-1763405739542-02991ab5416c?w=600',
-      ],
-      faqs: [
-        { q: 'What types of roads do you build?', a: 'We construct highways, arterial roads, residential streets, rural roads, and specialized industrial access roads.' },
-        { q: 'How do you minimize traffic disruption?', a: 'We use phased construction, night work when appropriate, and comprehensive traffic management plans.' },
-        { q: 'Do you build bridges?', a: 'Yes, we have extensive experience in bridge construction including concrete, steel, and composite structures.' },
-      ],
-    },
+    // 'road-infrastructure': {
+    //   title: 'Road & Infrastructure',
+    //   subtitle: 'Building the backbone of modern communities',
+    //   description: 'We specialize in large-scale infrastructure development including highways, roads, bridges, drainage systems, and utilities. Our infrastructure projects connect communities and support economic growth with durable, sustainable solutions.',
+    //   heroImage: 'https://images.unsplash.com/photo-1770152626760-3e9f5c59d71b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwc3Vuc2V0JTIwaW5kdXN0cmlhbHxlbnwxfHx8fDE3NzgzMzI5OTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    //   process: [
+    //     { step: 'Route Planning', desc: 'Alignment design and environmental assessment' },
+    //     { step: 'Earthworks', desc: 'Cut and fill operations, soil stabilization' },
+    //     { step: 'Drainage Systems', desc: 'Storm water management and culvert installation' },
+    //     { step: 'Pavement Construction', desc: 'Base courses and asphalt/concrete paving' },
+    //     { step: 'Utilities Installation', desc: 'Water, sewer, and utility infrastructure' },
+    //     { step: 'Finishing & Safety', desc: 'Road markings, signage, and safety features' },
+    //   ],
+    //   technologies: [
+    //     'GPS-Guided Grading Equipment',
+    //     'Intelligent Compaction Systems',
+    //     'Asphalt Paving Machines',
+    //     'Concrete Batch Plants',
+    //     'Traffic Management Systems',
+    //     'Pavement Testing Equipment',
+    //   ],
+    //   gallery: [
+    //     'https://images.unsplash.com/photo-1770152626760-3e9f5c59d71b?w=600',
+    //     'https://images.unsplash.com/photo-1758127080058-dfe30ed490d9?w=600',
+    //     'https://images.unsplash.com/photo-1763405739542-02991ab5416c?w=600',
+    //   ],
+    //   faqs: [
+    //     { q: 'What types of roads do you build?', a: 'We construct highways, arterial roads, residential streets, rural roads, and specialized industrial access roads.' },
+    //     { q: 'How do you minimize traffic disruption?', a: 'We use phased construction, night work when appropriate, and comprehensive traffic management plans.' },
+    //     { q: 'Do you build bridges?', a: 'Yes, we have extensive experience in bridge construction including concrete, steel, and composite structures.' },
+    //   ],
+    // },
   };
 
   const service = serviceData[servicePath];
@@ -438,7 +441,7 @@ export function ServiceDetail() {
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Technology</span>
             </div>
             <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
-              Software and Codes
+              {service.techTitle || 'Equipment and Techniques'}
             </h2>
           </motion.div>
 

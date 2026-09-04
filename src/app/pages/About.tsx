@@ -48,7 +48,7 @@ export function About() {
 
   const timeline = [                  
     { year: '2019', title: 'Jay Aedi Dev Founded', desc: 'Started taking on residential design and construction work in Haldwani, Uttarakhand' },
-    { year: '2020', title: 'First Servay start', desc: 'Started  land and house survey work' },
+    { year: '2020', title: 'First Servey start', desc: 'Started  land and house survey work' },
     { year: '2021', title: 'Commercial Work', desc: 'First mixed-use and commercial project designs completed' },
     { year: '2022', title: 'Registered licensiate under', desc: 'District level development Authority Nainital' },
     { year: '2023-24', title: 'Started residency building and interior designing work', desc: 'Started  work on the residential building' },
