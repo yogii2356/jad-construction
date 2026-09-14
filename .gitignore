@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+/dist
+.env
+.env.*
 
 .github/workflows/*.yml
 .github/workflows/inventory-production.yml
