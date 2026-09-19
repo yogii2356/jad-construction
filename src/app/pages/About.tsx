@@ -1,60 +1,12 @@
 import { motion } from 'motion/react';
-import { Award, Users, Building2, Shield, Target, Zap, CheckCircle2, TrendingUp } from 'lucide-react';
+import { Award, Users, Building2, Shield, Target, Zap, CheckCircle2, TrendingUp, HardHat, Ruler, Palette, Home } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { aboutDescription, coreDisciplines, approachText, visionText, team, timeline, certifications } from '../data/aboutData';
 
 import heroImg from '../../assets/WhatsApp Image 2026-05-09 at 18.16.51.jpeg';
 import machineryImg from '../../assets/005.jpg.jpeg';
-import { aboutData } from '../data/aboutData';
 
 export function About() {
-  const certifications = [
-    'Government Contractor Registration — Uttarakhand',
-    'Building Plan Approval — Nainital District',
-    'Professional Engineer (Civil) — Darshan Kumar Bhatt',
-  ];
-
-  const team = [
-    {
-      name: 'Darshan Kumar Bhatt',
-      education: 'M.tech in Structure',
-      experience : '10+ years' ,
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
-    },
-    {
-      name: 'Er. Ajay Singh Bhoj',
-      education: 'M.tech in Structure',
-      experience : '5+ years',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
-    },
-    {
-      name: 'Neha Sinha',
-      education: 'Bachelor of Design',
-      experience : '7+ Years of Experience in Interior designing and Landscape design.',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
-    },
-    {
-      name: 'Saket Sah',
-      education: 'B.Arch',
-      experience : '5+ Years of Experience in Architectural design.',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
-    },
-  ];
-
-  // const machinery = [
-  //   { name: 'Concrete Mixers', count: '2+' },
-  //   { name: 'Excavators', count: '1+' },
-  //   { name: 'Scaffolding Sets', count: '4+' },
-  //   { name: 'Transit Mixers', count: '1+' },
-  // ];
-
-  const timeline = [                  
-    { year: '2019', title: 'Jay Aedi Dev Founded', desc: 'Started taking on residential design and construction work in Haldwani, Uttarakhand' },
-    { year: '2020', title: 'First Servey start', desc: 'Started  land and house survey work' },
-    { year: '2021', title: 'Commercial Work', desc: 'First mixed-use and commercial project designs completed' },
-    { year: '2022', title: 'Registered licensiate under', desc: 'District level development Authority Nainital' },
-    { year: '2023-24', title: 'Started residency building and interior designing work', desc: 'Started  work on the residential building' },
-    { year: '2025-26', title: 'Rebranded to JAD Consultants', desc: 'Launching JAD Consultants with an expanded service range — covering design, planning, and construction under one roof' },
-  ];
 
   return (
     <div className="pt-32 bg-[#0D0C0B]">
@@ -87,15 +39,15 @@ export function About() {
               </span>
             </h1>
             <p className="font-['Inter'] text-xl text-[#A8A29E] leading-relaxed mb-8">
-              {aboutData.description}
+              {aboutDescription}
             </p>
             <div className="bg-[#141210]/80 backdrop-blur-md border border-[#C9974D]/20 rounded-2xl p-6 sm:p-8">
               <h2 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-6">Core Disciplines</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-['Inter'] text-sm sm:text-base text-[#A8A29E]">
-                {aboutData.coreDisciplines.map((discipline) => (
-                  <div key={discipline.name} className="flex items-start gap-2.5">
+                {coreDisciplines.map((discipline) => (
+                  <div key={discipline.label} className="flex items-start gap-2.5">
                     <span className="text-[#C9974D] font-bold text-lg">•</span>
-                    <span><strong className="text-white font-semibold">{discipline.name}:</strong> {discipline.description}</span>
+                    <span><strong className="text-white font-semibold">{discipline.label}:</strong> {discipline.desc}</span>
                   </div>
                 ))}
               </div>
@@ -169,7 +121,7 @@ export function About() {
               </div>
               <h2 className="font-['Playfair_Display'] font-bold text-3xl text-white mb-4">Our Approach</h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E]/95 leading-relaxed">
-                We provide complete architectural and engineering solutions under one roof. By integrating planning, surveying, structural design, construction management, and landscaping into a unified workflow, we eliminate communication gaps between separate firms. When the team that drafts your initial layout and maps your terrain is the same team managing construction and final site landscaping, your project benefits from total cohesion, faster problem-solving, and a seamless transition from concept to completion.
+                {approachText}
               </p>
             </motion.div>
 
@@ -184,7 +136,7 @@ export function About() {
               </div>
               <h2 className="font-['Playfair_Display'] font-bold text-3xl text-white mb-4">Where We're Headed</h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E]/95 leading-relaxed">
-                We are building the future of comprehensive project delivery. In Uttarakhand, our vision is to be the premier, single-source consultancy that handles every phase of development under one roof. Nationally, we are expanding our footprint. We want our diverse portfolio of planning, engineering, and landscaping success stories to open doors across the country, making us a sought-after partner for major projects throughout India.
+                {visionText}
               </p>
             </motion.div>
           </div>
@@ -252,29 +204,56 @@ export function About() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group"
-              >
-                <div className="relative overflow-hidden rounded-xl mb-4 project-image-wrap">
-                  <ImageWithFallback
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-80 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C0B]/90 via-transparent to-transparent z-10 pointer-events-none"></div>
-                </div>
-                <h3 className="font-['Playfair_Display'] font-bold text-xl text-white mb-1">{member.name}</h3>
-                <p className="font-['Inter'] text-[#A8A29E]/90">{member.education}</p>
-                <p className="font-['Inter'] text-[#A8A29E]/90">{member.experience}</p>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {team.map((member, index) => {
+              const roleIcons: Record<string, React.ReactNode> = {
+                'Structural Engineer': <HardHat className="w-8 h-8 text-white" />,
+                'Interior Designer': <Palette className="w-8 h-8 text-white" />,
+                'Architect': <Home className="w-8 h-8 text-white" />,
+              };
+              const initials = member.name.split(' ').map((n: string) => n[0]).join('').slice(0, 2);
+              return (
+                <motion.div
+                  key={member.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.12 }}
+                  className="group relative bg-[#141210]/70 backdrop-blur-sm border border-[#C9974D]/12 rounded-2xl p-6 hover:border-[#C9974D]/50 hover:-translate-y-2 shadow-md shadow-black/20 hover:shadow-2xl hover:shadow-[#C9974D]/10 transition-all duration-400 cursor-default overflow-hidden"
+                >
+                  {/* Subtle background glow on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#C9974D]/0 to-[#C9974D]/0 group-hover:from-[#C9974D]/5 group-hover:to-transparent rounded-2xl transition-all duration-500 pointer-events-none" />
+
+                  {/* Avatar */}
+                  <div className="relative mb-6">
+                    <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-[#C9974D] via-[#DEB06A] to-[#B8863C] flex items-center justify-center shadow-xl shadow-[#C9974D]/30 group-hover:shadow-[#C9974D]/50 transition-all duration-300 ring-4 ring-[#C9974D]/10 group-hover:ring-[#C9974D]/30">
+                      <span className="font-['Playfair_Display'] font-bold text-3xl text-white">{initials}</span>
+                    </div>
+                    {/* Role icon badge */}
+                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-9 h-9 bg-[#141210] border-2 border-[#C9974D]/40 rounded-full flex items-center justify-center group-hover:border-[#C9974D]/80 transition-all duration-300">
+                      <div className="w-5 h-5 text-[#C9974D]">
+                        {member.role === 'Structural Engineer' && <HardHat className="w-5 h-5" />}
+                        {member.role === 'Interior Designer' && <Palette className="w-5 h-5" />}
+                        {member.role === 'Architect' && <Home className="w-5 h-5" />}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Info */}
+                  <div className="text-center mt-4">
+                    <h3 className="font-['Playfair_Display'] font-bold text-lg text-white mb-1 group-hover:text-[#DEB06A] transition-colors duration-300">{member.name}</h3>
+                    <div className="inline-block px-3 py-0.5 bg-[#C9974D]/15 border border-[#C9974D]/25 rounded-full mb-3">
+                      <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs">{member.role}</span>
+                    </div>
+                    <p className="font-['Inter'] text-[#A8A29E]/80 text-sm mb-1">{member.education}</p>
+                    <p className="font-['Inter'] text-[#A8A29E]/60 text-xs leading-relaxed">{member.experience}</p>
+                  </div>
+
+                  {/* Animated bottom border on hover */}
+                  <div className="absolute bottom-0 left-0 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-[#C9974D] via-[#DEB06A] to-[#B8863C] rounded-full transition-all duration-500" />
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

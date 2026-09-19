@@ -13,7 +13,7 @@ import aboutImg from '../../assets/WhatsApp Image 2026-05-09 at 18.16.52.jpeg';
 import foundationPlanPdf from '../../assets/plans/foundation-plan.pdf';
 import groundFloorPlanPdf from '../../assets/plans/ground-floor-plan.pdf';
 import { projectsData } from '../data/projectsData';
-import { aboutData } from '../data/aboutData';
+import { aboutDescription, coreDisciplines } from '../data/aboutData';
 
 export function Home() {
 
@@ -170,15 +170,15 @@ export function Home() {
                 About JAD Consultants
               </h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E] mb-6 leading-relaxed">
-                {aboutData.description}
+                {aboutDescription}
               </p>
               <div className="space-y-3 mb-8">
                 <h3 className="font-['Playfair_Display'] font-semibold text-white text-xl mb-3">Core Disciplines</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-['Inter'] text-sm text-[#A8A29E]">
-                  {aboutData.coreDisciplines.map((discipline) => (
-                    <div key={discipline.name} className="flex items-start gap-2">
+                  {coreDisciplines.map((discipline) => (
+                    <div key={discipline.label} className="flex items-start gap-2">
                       <span className="text-[#C9974D] font-bold">•</span>
-                      <span><strong className="text-white">{discipline.name}:</strong> {discipline.description}</span>
+                      <span><strong className="text-white">{discipline.label}:</strong> {discipline.desc}</span>
                     </div>
                   ))}
                 </div>
