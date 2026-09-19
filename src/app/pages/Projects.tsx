@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import { MapPin, Calendar, ChevronLeft, ChevronRight } from 'lucide-react';
+import { MapPin, Calendar, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { projectsData, CATEGORIES, ProjectItem } from '../data/projectsData';
 
-const ProjectCard = ({ project, index }: { project: ProjectItem; index: number }) => {
+const ProjectCard = ({ project, index, onOpenLightbox }: { project: ProjectItem; index: number; onOpenLightbox: (project: ProjectItem, index: number) => void }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = (e: React.MouseEvent) => {
@@ -27,7 +27,10 @@ const ProjectCard = ({ project, index }: { project: ProjectItem; index: number }
       transition={{ delay: index * 0.1 }}
       className="group relative overflow-hidden rounded-xl bg-[#141210]/60 backdrop-blur-sm border border-[#C9974D]/12 hover:border-[#C9974D]/35 hover:-translate-y-1 shadow-md shadow-black/15 hover:shadow-xl hover:shadow-black/25 transition-all duration-300"
     >
-      <div className="relative overflow-hidden project-image-wrap group/carousel h-64">
+      <div 
+        className="relative overflow-hidden project-image-wrap group/carousel h-64 cursor-pointer"
+        onClick={() => onOpenLightbox(project, currentImageIndex)}
+      >
         <ImageWithFallback
           src={project.images[currentImageIndex]}
           alt={`${project.title} - Image ${currentImageIndex + 1}`}
@@ -98,7 +101,84 @@ const ProjectCard = ({ project, index }: { project: ProjectItem; index: number }
   );
 };
 
+const Lightbox = ({ project, initialIndex, onClose }: { project: ProjectItem; initialIndex: number; onClose: () => void }) => {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+
+  const nextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev + 1) % project.images.length);
+  };
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev - 1 + project.images.length) % project.images.length);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowRight') setCurrentIndex((prev) => (prev + 1) % project.images.length);
+      if (e.key === 'ArrowLeft') setCurrentIndex((prev) => (prev - 1 + project.images.length) % project.images.length);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onClose, project.images.length]);
+
+  return (
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm" 
+      onClick={onClose}
+    >
+      <button 
+        onClick={onClose}
+        className="absolute top-6 right-6 p-2 text-white/70 hover:text-white bg-black/50 hover:bg-[#C9974D] rounded-full transition-all z-[110]"
+      >
+        <X className="w-6 h-6" />
+      </button>
+
+      {project.images.length > 1 && (
+        <>
+          <button
+            onClick={prevImage}
+            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 bg-black/50 text-white rounded-full hover:bg-[#C9974D] transition-all z-[110]"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            onClick={nextImage}
+            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 bg-black/50 text-white rounded-full hover:bg-[#C9974D] transition-all z-[110]"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </>
+      )}
+
+      <div className="relative max-w-[90vw] max-h-[90vh] flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
+        <ImageWithFallback
+          src={project.images[currentIndex]}
+          alt={`${project.title} - Image ${currentIndex + 1}`}
+          className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+        />
+        <div className="mt-4 text-center">
+          <h3 className="text-white font-['Playfair_Display'] text-2xl">
+            {project.title}
+          </h3>
+          {project.images.length > 1 && (
+            <p className="text-[#A8A29E] font-['Inter'] text-sm mt-1">
+              Image {currentIndex + 1} of {project.images.length}
+            </p>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 export function Projects() {
+  const [lightboxData, setLightboxData] = useState<{ project: ProjectItem; initialIndex: number } | null>(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
 
@@ -181,7 +261,12 @@ export function Projects() {
           {filteredProjects.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProjects.map((project, index) => (
-                <ProjectCard key={project.id} project={project} index={index} />
+                <ProjectCard 
+                  key={project.id} 
+                  project={project} 
+                  index={index} 
+                  onOpenLightbox={(proj, idx) => setLightboxData({ project: proj, initialIndex: idx })}
+                />
               ))}
             </div>
           ) : (
@@ -200,6 +285,16 @@ export function Projects() {
           )}
         </div>
       </section>
+
+      <AnimatePresence>
+        {lightboxData && (
+          <Lightbox 
+            project={lightboxData.project} 
+            initialIndex={lightboxData.initialIndex} 
+            onClose={() => setLightboxData(null)} 
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

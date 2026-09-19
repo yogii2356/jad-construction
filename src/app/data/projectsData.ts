@@ -34,6 +34,14 @@ import hjdrint02 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-
 import hjdrint03 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-24 at 18.52.19.jpeg';
 import hjdrint04 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-24 at 18.52.20.jpeg';
 
+// New Project Imports
+import np01 from '../../assets/construction/WhatsApp Image 2026-09-07 at 10.08.42.jpeg';
+import np02 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.25.jpeg';
+import np03 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.26.jpeg';
+import np04 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.27.jpeg';
+import np05 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.28.jpeg';
+import np06 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.28 (1).jpeg';
+
 export interface ProjectItem {
   id: string;
   title: string;
@@ -94,6 +102,15 @@ export const projectsData: ProjectItem[] = [
     description: 'Construction progress of Pant Bhawan — a well-planned residential building on Rampur Road, near Panchayat Ghar, built with quality construction practices.',
   },
   {
+    id: 'np-01',
+    title: 'Bhatt Hotel & Restaurant',
+    category: 'Construction',
+    location: 'Jageshwar',
+    year: '2026',
+    images: [np01, np02, np03, np04, np05, np06],
+    description: 'On-site construction progress of Bhatt Hotel & Restaurant — a new project in Jageshwar',
+  },
+  {
     id: 'hjdr-01',
     title: 'Hotel Jageshwar Dham & Restaurant',
     category: 'Architecture Planning',
@@ -140,12 +157,12 @@ export const projectsData: ProjectItem[] = [
   },
   {
     id: 'dc-06',
-    title: 'Triplex Villa Complex',
+    title: 'Duplex villa',
     category: 'Architecture Planning',
     location: 'Haldwani',
     year: '2026',
     images: [dc06],
-    description: 'Multi-family triplex villa complex offering privacy and community.',
+    description: 'Multi-family duplex villa complex offering privacy and community.',
   },
   {
     id: 'dc-07',
