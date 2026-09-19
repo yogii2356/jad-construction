@@ -41,6 +41,7 @@ import np03 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.2
 import np04 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.27.jpeg';
 import np05 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.28.jpeg';
 import np06 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.28 (1).jpeg';
+import np07 from '../../assets/construction/final_image.jpg';
 
 export interface ProjectItem {
   id: string;
@@ -103,12 +104,12 @@ export const projectsData: ProjectItem[] = [
   },
   {
     id: 'np-01',
-    title: 'Bhatt Hotel & Restaurant',
+    title: 'Roots Inn Jageshwar',
     category: 'Construction',
-    location: 'Jageshwar',
+    location: 'Near Jageshwar',
     year: '2026',
-    images: [np01, np02, np03, np04, np05, np06],
-    description: 'On-site construction progress of Bhatt Hotel & Restaurant — a new project in Jageshwar',
+    images: [np01, np02, np03, np04, np05, np06, np07],
+    description: 'On-site construction progress of Roots inn Jageshwar — a new project in Jageshwar',
   },
   {
     id: 'hjdr-01',
