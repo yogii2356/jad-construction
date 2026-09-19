@@ -4,6 +4,7 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 import heroImg from '../../assets/WhatsApp Image 2026-05-09 at 18.16.51.jpeg';
 import machineryImg from '../../assets/005.jpg.jpeg';
+import { aboutData } from '../data/aboutData';
 
 export function About() {
   const certifications = [
@@ -86,35 +87,17 @@ export function About() {
               </span>
             </h1>
             <p className="font-['Inter'] text-xl text-[#A8A29E] leading-relaxed mb-8">
-              JAD Consultants is led by partners with deep expertise in design and execution, bringing together years of hands-on industry experience. We deliver integrated design, engineering, and construction solutions, eliminating the friction of managing multiple vendors by providing a single point of accountability from blueprint to handover.
+              {aboutData.description}
             </p>
             <div className="bg-[#141210]/80 backdrop-blur-md border border-[#C9974D]/20 rounded-2xl p-6 sm:p-8">
               <h2 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-6">Core Disciplines</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-['Inter'] text-sm sm:text-base text-[#A8A29E]">
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#C9974D] font-bold text-lg">•</span>
-                  <span><strong className="text-white font-semibold">Construction:</strong> Full-scale site management and execution.</span>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#C9974D] font-bold text-lg">•</span>
-                  <span><strong className="text-white font-semibold">Architecture:</strong> Functional and aesthetic spatial design.</span>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#C9974D] font-bold text-lg">•</span>
-                  <span><strong className="text-white font-semibold">Structural:</strong> Analysis and design of structure as per IS codes.</span>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#C9974D] font-bold text-lg">•</span>
-                  <span><strong className="text-white font-semibold">Surveying:</strong> Precise land mapping and site analysis.</span>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#C9974D] font-bold text-lg">•</span>
-                  <span><strong className="text-white font-semibold">3D Visualization:</strong> Photorealistic digital renderings.</span>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#C9974D] font-bold text-lg">•</span>
-                  <span><strong className="text-white font-semibold">Interior & Exterior:</strong> Complete indoor and outdoor visualization with modern to classic designs.</span>
-                </div>
+                {aboutData.coreDisciplines.map((discipline) => (
+                  <div key={discipline.name} className="flex items-start gap-2.5">
+                    <span className="text-[#C9974D] font-bold text-lg">•</span>
+                    <span><strong className="text-white font-semibold">{discipline.name}:</strong> {discipline.description}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </motion.div>

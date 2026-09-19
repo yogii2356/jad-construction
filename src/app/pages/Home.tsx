@@ -10,75 +10,14 @@ import { servicesData } from '../data/servicesData';
 import heroImg from '../../assets/11.jpg.jpeg'; 
 import aboutImg from '../../assets/WhatsApp Image 2026-05-09 at 18.16.52.jpeg';
 
-import dc01 from '../../assets/design-concepts/design-concept-01.jpg';
-import dc02 from '../../assets/design-concepts/design-concept-02.jpg';
-import dc03 from '../../assets/design-concepts/design-concept-03.jpg';
-import dc04 from '../../assets/design-concepts/design-concept-04.jpg';
-import dc05 from '../../assets/design-concepts/design-concept-05.jpg';
-import dc06 from '../../assets/design-concepts/design-concept-06.jpg';
-import dc07 from '../../assets/design-concepts/design-concept-07.jpg';
-import dc08 from '../../assets/design-concepts/design-concept-08.jpg';
-import dc09 from '../../assets/design-concepts/design-concept-09.jpg';
-import dc10 from '../../assets/design-concepts/design-concept-10.jpg';
-
 import foundationPlanPdf from '../../assets/plans/foundation-plan.pdf';
 import groundFloorPlanPdf from '../../assets/plans/ground-floor-plan.pdf';
+import { projectsData } from '../data/projectsData';
+import { aboutData } from '../data/aboutData';
 
 export function Home() {
 
-
-  const projects = [
-    {
-      title: 'Hillside Residential Villa',
-      category: 'Design Concept',
-      image: dc01,
-    },
-    {
-      title: 'Stone-Facade Residential Villa',
-      category: 'Design Concept',
-      image: dc02,
-    },
-    {
-      title: 'Modern Residential Elevation',
-      category: 'Design Concept',
-      image: dc03,
-    },
-    {
-      title: 'Contemporary Villa Design',
-      category: 'Design Concept',
-      image: dc04,
-    },
-    {
-      title: 'Two-Story Villa Concept',
-      category: 'Design Concept',
-      image: dc05,
-    },
-    {
-      title: 'Triplex Villa Complex',
-      category: 'Design Concept',
-      image: dc06,
-    },
-    {
-      title: 'Mixed-Use Apartment & Retail Complex',
-      category: 'Design Concept',
-      image: dc07,
-    },
-    {
-      title: 'Twin Villa Compound',
-      category: 'Design Concept',
-      image: dc08,
-    },
-    {
-      title: 'Modern Villa - Night Elevation',
-      category: 'Design Concept',
-      image: dc09,
-    },
-    {
-      title: 'Two-Story Home with Car Porch',
-      category: 'Design Concept',
-      image: dc10,
-    },
-  ];
+  const featuredProjects = projectsData;
 
   // TODO: Replace placeholder testimonials with real client quotes
   const testimonials = [
@@ -231,35 +170,17 @@ export function Home() {
                 About JAD Consultants
               </h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E] mb-6 leading-relaxed">
-                JAD Consultants is led by partners with deep expertise in design and execution, bringing together years of hands-on industry experience. We deliver integrated design, engineering, and construction solutions, eliminating the friction of managing multiple vendors by providing a single point of accountability from blueprint to handover.
+                {aboutData.description}
               </p>
               <div className="space-y-3 mb-8">
                 <h3 className="font-['Playfair_Display'] font-semibold text-white text-xl mb-3">Core Disciplines</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-['Inter'] text-sm text-[#A8A29E]">
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#C9974D] font-bold">•</span>
-                    <span><strong className="text-white">Construction:</strong> Full-scale site management and execution.</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#C9974D] font-bold">•</span>
-                    <span><strong className="text-white">Architecture:</strong> Functional and aesthetic spatial design.</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#C9974D] font-bold">•</span>
-                    <span><strong className="text-white">Structural:</strong> Analysis and design of structure as per IS codes.</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#C9974D] font-bold">•</span>
-                    <span><strong className="text-white">Surveying:</strong> Precise land mapping and site analysis.</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#C9974D] font-bold">•</span>
-                    <span><strong className="text-white">3D Visualization:</strong> Photorealistic digital renderings.</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-[#C9974D] font-bold">•</span>
-                    <span><strong className="text-white">Interior & Exterior:</strong> Complete indoor and outdoor visualization with modern to classic designs.</span>
-                  </div>
+                  {aboutData.coreDisciplines.map((discipline) => (
+                    <div key={discipline.name} className="flex items-start gap-2">
+                      <span className="text-[#C9974D] font-bold">•</span>
+                      <span><strong className="text-white">{discipline.name}:</strong> {discipline.description}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
               <Link
@@ -349,23 +270,23 @@ export function Home() {
             className="text-center mb-16"
           >
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
-              <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Our Design Portfolio</span>
+              <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Our Portfolio</span>
             </div>
             <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
-              Design Concepts
+              Featured Projects
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
-              Architectural elevation renders from our studio — these are design drawings, not photos of completed builds.
+              A selection of our recent architectural designs, 3D interiors, and construction projects.
             </p>
           </motion.div>
 
           <div className="projects-slider">
             <Slider {...sliderSettings}>
-              {projects.map((project, index) => (
-                <div key={index} className="px-3">
+              {featuredProjects.map((project, index) => (
+                <div key={project.id || index} className="px-3">
                   <div className="group relative overflow-hidden rounded-xl project-image-wrap">
                     <ImageWithFallback
-                      src={project.image}
+                      src={project.images[0]}
                       alt={project.title}
                       className="w-full h-80 object-cover"
                     />
