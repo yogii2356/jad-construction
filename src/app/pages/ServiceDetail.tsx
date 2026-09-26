@@ -156,12 +156,10 @@ export function ServiceDetail() {
         { step: 'Restoration', desc: 'Facade restoration and finishing touches' },
       ],
       technologies: [
-        'Non-Destructive Testing',
-        'Carbon Fiber Reinforcement',
-        'Energy-Efficient HVAC Upgrades',
-        'Historic Preservation Techniques',
-        'Smart Building Retrofits',
-        'Green Building Certifications',
+        'Autodesk 3ds Max',
+        'SketchUp Pro',
+        'V-Ray',
+        'AutoCAD Architecture',
       ],
       gallery: [
         'https://images.unsplash.com/photo-1652876256405-3902cc201b22?w=600',

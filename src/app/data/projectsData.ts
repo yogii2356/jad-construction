@@ -42,6 +42,10 @@ import np04 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.2
 import np05 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.28.jpeg';
 import np06 from '../../assets/construction/WhatsApp Image 2026-09-07 at 11.15.28 (1).jpeg';
 import np07 from '../../assets/construction/final_image.jpg';
+import np08 from '../../assets/construction/WhatsApp Image 2026-09-22 at 19.32.41.jpeg';
+import np09 from '../../assets/construction/WhatsApp Image 2026-09-22 at 19.32.42 (1).jpeg';
+import np10 from '../../assets/construction/WhatsApp Image 2026-09-22 at 19.32.43.jpeg';
+import np11 from '../../assets/construction/WhatsApp Image 2026-09-22 at 19.32.43 (1).jpeg';
 
 export interface ProjectItem {
   id: string;
@@ -108,7 +112,7 @@ export const projectsData: ProjectItem[] = [
     category: 'Construction',
     location: 'Near Jageshwar',
     year: '2026',
-    images: [np01, np02, np03, np04, np05, np06, np07],
+    images: [np01, np02, np03, np04, np05, np06, np07, np08, np09, np10, np11],
     description: 'On-site construction progress of Roots inn Jageshwar — a new project in Jageshwar',
   },
   {
