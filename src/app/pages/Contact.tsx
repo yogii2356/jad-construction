@@ -39,7 +39,7 @@ export function Contact() {
             <div className="inline-block px-4 py-2 bg-[#C9974D]/10 border border-[#C9974D]/20 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-sm">Get In Touch</span>
             </div>
-            <h1 className="font-['Poppins'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+            <h1 className="font-['Inter'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               Contact
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#C9974D] to-[#B8863C]">
                 JAD Consultants
@@ -63,7 +63,7 @@ export function Contact() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-['Poppins'] font-bold text-3xl text-white mb-8">
+                <h2 className="font-['Inter'] font-bold text-3xl text-white mb-8">
                   Contact Information
                 </h2>
 
@@ -74,7 +74,7 @@ export function Contact() {
                         <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-['Poppins'] font-semibold text-white mb-1">Office Address</h3>
+                        <h3 className="font-['Inter'] font-semibold text-white mb-1">Office Address</h3>
                         <p className="font-['Inter'] text-gray-400 text-sm">
                           H. No. 80A, Ward No 8<br />
                           Jagdamanagar, Near DC<br />
@@ -90,7 +90,7 @@ export function Contact() {
                         <Phone className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-['Poppins'] font-semibold text-white mb-1">Phone Numbers</h3>
+                        <h3 className="font-['Inter'] font-semibold text-white mb-1">Phone Numbers</h3>
                         <p className="font-['Inter'] text-gray-400 text-sm">
                           +91 7055676167<br />
                           +91 6397496096<br />
@@ -105,7 +105,7 @@ export function Contact() {
                         <Mail className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-['Poppins'] font-semibold text-white mb-1">Email Addresses</h3>
+                        <h3 className="font-['Inter'] font-semibold text-white mb-1">Email Addresses</h3>
                         <p className="font-['Inter'] text-gray-400 text-sm">
                           er.darshankumarbhatt@gmail.com
                         </p>
@@ -119,7 +119,7 @@ export function Contact() {
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-['Poppins'] font-semibold text-white mb-1">Business Hours</h3>
+                        <h3 className="font-['Inter'] font-semibold text-white mb-1">Business Hours</h3>
                         <p className="font-['Inter'] text-gray-400 text-sm">
                           Monday - Friday: 8:00 AM - 6:00 PM<br />
                           Saturday: 9:00 AM - 2:00 PM<br />
@@ -131,7 +131,7 @@ export function Contact() {
 
                   <div className="bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-xl p-6 text-center">
                     <MessageSquare className="w-12 h-12 text-white mx-auto mb-4" />
-                    <h3 className="font-['Poppins'] font-semibold text-white mb-2">WhatsApp Support</h3>
+                    <h3 className="font-['Inter'] font-semibold text-white mb-2">WhatsApp Support</h3>
                     <p className="font-['Inter'] text-white/90 text-sm mb-4">
                       Get instant answers to your questions
                     </p>
@@ -156,7 +156,7 @@ export function Contact() {
                 viewport={{ once: true }}
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
               >
-                <h2 className="font-['Poppins'] font-bold text-3xl text-white mb-2">
+                <h2 className="font-['Inter'] font-bold text-3xl text-white mb-2">
                   Request a Site Visit
                 </h2>
                 <p className="font-['Inter'] text-gray-400 mb-8">
@@ -291,7 +291,7 @@ export function Contact() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="font-['Poppins'] font-bold text-4xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl text-white mb-4">
               Visit Our Office
             </h2>
             <p className="font-['Inter'] text-lg text-gray-400">

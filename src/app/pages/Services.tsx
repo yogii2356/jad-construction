@@ -20,7 +20,7 @@ export function Services() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Our Services</span>
             </div>
-            <h1 className="font-['Playfair_Display'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+            <h1 className="font-['Inter'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               Comprehensive
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#C9974D] via-[#DEB06A] to-[#B8863C]">
                 Construction Solutions
@@ -52,7 +52,7 @@ export function Services() {
                     <div className="w-16 h-16 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-[#C9974D]/15">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-4">{service.title}</h3>
+                    <h3 className="font-['Inter'] font-bold text-2xl text-white mb-4">{service.title}</h3>
                     <p className="font-['Inter'] text-[#A8A29E] mb-8 leading-relaxed text-base">{service.description}</p>
                   </div>
                   <div>
@@ -82,7 +82,7 @@ export function Services() {
           >
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-10"></div>
             <div className="relative z-10">
-              <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+              <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
                 Need a Custom Solution?
               </h2>
               <p className="font-['Inter'] text-xl text-[#A8A29E] mb-8 max-w-2xl mx-auto">

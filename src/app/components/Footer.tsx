@@ -36,7 +36,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-['Poppins'] font-semibold text-white mb-6">Quick Links</h3>
+            <h3 className="font-['Inter'] font-semibold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li><Link to="/" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">Home</Link></li>
               <li><Link to="/about" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">About Us</Link></li>
@@ -48,7 +48,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-['Poppins'] font-semibold text-white mb-6">Services</h3>
+            <h3 className="font-['Inter'] font-semibold text-white mb-6">Services</h3>
             <ul className="space-y-3">
               <li><Link to="/services/structure-analysis-and-design" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">Structural Analysis & Design</Link></li>
               <li><Link to="/services/construction" className="font-['Inter'] text-[#A8A29E] hover:text-[#C9974D] transition-colors text-sm">Construction</Link></li>
@@ -60,7 +60,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-['Poppins'] font-semibold text-white mb-6">Contact Info</h3>
+            <h3 className="font-['Inter'] font-semibold text-white mb-6">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[#C9974D] flex-shrink-0 mt-0.5" />

@@ -86,7 +86,7 @@ export function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="font-['Playfair_Display'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-[1.1] tracking-tight">
+              <h1 className="font-['Inter'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-[1.1] tracking-tight">
                 Structure First.
                 <span className="block brand-gradient-text-animate">
                   Design That Stands.
@@ -119,15 +119,15 @@ export function Home() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">7+</div>
+                <div className="text-4xl font-['Inter'] font-bold brand-gradient-text mb-2">7+</div>
                 <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Years in Practice</div>
               </div>
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">100+</div>
+                <div className="text-4xl font-['Inter'] font-bold brand-gradient-text mb-2">100+</div>
                 <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Design Concepts</div>
               </div>
               <div className="bg-[#141210]/60 backdrop-blur-md border border-[#C9974D]/15 rounded-xl p-6 hover:border-[#C9974D]/35 hover:bg-[#C9974D]/5 transition-all duration-300 col-span-2 shadow-lg shadow-black/25 hover:-translate-y-1">
-                <div className="text-4xl font-['Playfair_Display'] font-bold brand-gradient-text mb-2">Haldwani, Almora, Delhi </div>
+                <div className="text-4xl font-['Inter'] font-bold brand-gradient-text mb-2">Haldwani, Almora, Delhi </div>
                 {/* <div className="font-['Inter'] text-[#A8A29E] text-sm tracking-wide uppercase font-medium">Uttarakhand,Delhi</div> */}
               </div>
             </motion.div>
@@ -166,14 +166,14 @@ export function Home() {
               <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
                 <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">About JAD Consultants</span>
               </div>
-              <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-6 leading-tight">
+              <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-6 leading-tight">
                 About JAD Consultants
               </h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E] mb-6 leading-relaxed">
                 {aboutDescription}
               </p>
               <div className="space-y-3 mb-8">
-                <h3 className="font-['Playfair_Display'] font-semibold text-white text-xl mb-3">Core Disciplines</h3>
+                <h3 className="font-['Inter'] font-semibold text-white text-xl mb-3">Core Disciplines</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-['Inter'] text-sm text-[#A8A29E]">
                   {coreDisciplines.map((discipline) => (
                     <div key={discipline.label} className="flex items-start gap-2">
@@ -207,7 +207,7 @@ export function Home() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Our Services</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               What We Do
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
@@ -231,7 +231,7 @@ export function Home() {
                     <div className="w-14 h-14 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#C9974D]/10">
                       <Icon className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="font-['Playfair_Display'] font-semibold text-xl text-white mb-2">{service.title}</h3>
+                    <h3 className="font-['Inter'] font-semibold text-xl text-white mb-2">{service.title}</h3>
                     <p className="font-['Inter'] text-[#A8A29E] text-sm mb-6 leading-relaxed">{service.description}</p>
                   </div>
                   <div>
@@ -272,7 +272,7 @@ export function Home() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Our Portfolio</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               Featured Projects
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
@@ -295,7 +295,7 @@ export function Home() {
                       <div className="inline-block px-3 py-1 bg-[#C9974D]/20 backdrop-blur-sm border border-[#C9974D]/35 rounded-full mb-3">
                         <span className="font-['Inter'] font-medium text-[#F0EAE0] text-xs">{project.category}</span>
                       </div>
-                      <h3 className="font-['Playfair_Display'] font-bold text-xl text-white">{project.title}</h3>
+                      <h3 className="font-['Inter'] font-bold text-xl text-white">{project.title}</h3>
                     </div>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ export function Home() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className={`font-['Playfair_Display'] font-bold ${stat.size || 'text-4xl sm:text-5xl'} brand-gradient-text mb-2 whitespace-nowrap`}>{stat.number}</div>
+                  <div className={`font-['Inter'] font-bold ${stat.size || 'text-4xl sm:text-5xl'} brand-gradient-text mb-2 whitespace-nowrap`}>{stat.number}</div>
                   <div className="font-['Inter'] font-medium text-[#A8A29E] text-sm tracking-wide uppercase">{stat.label}</div>
                 </motion.div>
               ))}
@@ -350,7 +350,7 @@ export function Home() {
 
 
       {/* Client Testimonials */}
-      <section className="py-24 bg-[#141210]">
+      {/* <section className="py-24 bg-[#141210]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -361,12 +361,12 @@ export function Home() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Testimonials</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               What Our Clients Say
             </h2>
-          </motion.div>
+          </motion.div> */}
 
-          <div className="testimonial-slider">
+          {/* <div className="testimonial-slider">
             <Slider {...testimonialSettings}>
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="px-4">
@@ -378,7 +378,7 @@ export function Home() {
                     </div>
                     <p className="font-['Inter'] text-lg text-[#A8A29E] mb-8 italic">"{testimonial.content}"</p>
                     <div>
-                      <div className="font-['Playfair_Display'] font-semibold text-white text-lg">{testimonial.name}</div>
+                      <div className="font-['Inter'] font-semibold text-white text-lg">{testimonial.name}</div>
                       <div className="font-['Inter'] text-[#A8A29E]/80 text-sm">{testimonial.position}</div>
                     </div>
                   </div>
@@ -387,7 +387,7 @@ export function Home() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Banner */}
       <section className="py-24 bg-[#0D0C0B]">
@@ -403,7 +403,7 @@ export function Home() {
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#F0EAE0]/3 rounded-full blur-3xl"></div>
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-10"></div>
             <div className="relative z-10">
-              <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+              <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
                 Have a plot or a project in mind?
               </h2>
               <p className="font-['Inter'] text-xl text-[#A8A29E] mb-8 max-w-2xl mx-auto">

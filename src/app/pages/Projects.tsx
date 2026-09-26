@@ -80,7 +80,7 @@ const ProjectCard = ({ project, index, onOpenLightbox }: { project: ProjectItem;
       </div>
 
       <div className="p-6 relative z-20">
-        <h3 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-3 group-hover:text-[#C9974D] transition-colors">
+        <h3 className="font-['Inter'] font-bold text-2xl text-white mb-3 group-hover:text-[#C9974D] transition-colors">
           {project.title}
         </h3>
         <p className="font-['Inter'] text-[#A8A29E] mb-4 text-sm leading-relaxed">
@@ -163,7 +163,7 @@ const Lightbox = ({ project, initialIndex, onClose }: { project: ProjectItem; in
           className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
         />
         <div className="mt-4 text-center">
-          <h3 className="text-white font-['Playfair_Display'] text-2xl">
+          <h3 className="text-white font-['Inter'] text-2xl">
             {project.title}
           </h3>
           {project.images.length > 1 && (
@@ -221,7 +221,7 @@ export function Projects() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Our Portfolio</span>
             </div>
-            <h1 className="font-['Playfair_Display'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+            <h1 className="font-['Inter'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               Design
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#C9974D] via-[#DEB06A] to-[#B8863C]">
                 Concepts
@@ -271,7 +271,7 @@ export function Projects() {
             </div>
           ) : (
             <div className="text-center py-20 bg-[#141210]/60 border border-[#C9974D]/15 rounded-2xl p-12 shadow-xl">
-              <h3 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-3">No design concept renders currently tagged under "{activeFilter}"</h3>
+              <h3 className="font-['Inter'] font-bold text-2xl text-white mb-3">No design concept renders currently tagged under "{activeFilter}"</h3>
               <p className="font-['Inter'] text-[#A8A29E] max-w-lg mx-auto mb-6 leading-relaxed">
                 Our portfolio currently showcases architectural elevation renders. Technical plan documents, structural calculations, and survey filings are maintained separately.
               </p>

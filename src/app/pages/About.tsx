@@ -32,7 +32,7 @@ export function About() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">About JAD Consultants</span>
             </div>
-            <h1 className="font-['Playfair_Display'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+            <h1 className="font-['Inter'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               About JAD Consultants
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#C9974D] via-[#DEB06A] to-[#B8863C]">
                 Haldwani, Uttarakhand
@@ -42,7 +42,7 @@ export function About() {
               {aboutDescription}
             </p>
             <div className="bg-[#141210]/80 backdrop-blur-md border border-[#C9974D]/20 rounded-2xl p-6 sm:p-8">
-              <h2 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-6">Core Disciplines</h2>
+              <h2 className="font-['Inter'] font-bold text-2xl text-white mb-6">Core Disciplines</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-['Inter'] text-sm sm:text-base text-[#A8A29E]">
                 {coreDisciplines.map((discipline) => (
                   <div key={discipline.label} className="flex items-start gap-2.5">
@@ -65,7 +65,7 @@ export function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               How We Got Here
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
@@ -89,13 +89,13 @@ export function About() {
                 >
                   <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
                     <div className="bg-[#0D0C0B]/60 backdrop-blur-sm border border-[#C9974D]/12 rounded-xl p-6 hover:border-[#C9974D]/35 hover:-translate-y-1 shadow-md shadow-black/15 hover:shadow-xl hover:shadow-black/25 transition-all duration-300 group">
-                      <div className="font-['Playfair_Display'] font-bold text-2xl text-[#C9974D] mb-2">{item.title}</div>
+                      <div className="font-['Inter'] font-bold text-2xl text-[#C9974D] mb-2">{item.title}</div>
                       <p className="font-['Inter'] text-[#A8A29E]/90 text-sm leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
 
                   <div className="relative z-10 w-20 h-20 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#C9974D]/30">
-                    <span className="font-['Playfair_Display'] font-bold text-white text-lg">{item.year}</span>
+                    <span className="font-['Inter'] font-bold text-white text-lg">{item.year}</span>
                   </div>
 
                   <div className="flex-1"></div>
@@ -119,7 +119,7 @@ export function About() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-full flex items-center justify-center mb-6 shadow-md shadow-[#C9974D]/15">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h2 className="font-['Playfair_Display'] font-bold text-3xl text-white mb-4">Our Approach</h2>
+              <h2 className="font-['Inter'] font-bold text-3xl text-white mb-4">Our Approach</h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E]/95 leading-relaxed">
                 {approachText}
               </p>
@@ -134,7 +134,7 @@ export function About() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-full flex items-center justify-center mb-6 shadow-md shadow-[#C9974D]/15">
                 <Zap className="w-8 h-8 text-white" />
               </div>
-              <h2 className="font-['Playfair_Display'] font-bold text-3xl text-white mb-4">Where We're Headed</h2>
+              <h2 className="font-['Inter'] font-bold text-3xl text-white mb-4">Where We're Headed</h2>
               <p className="font-['Inter'] text-lg text-[#A8A29E]/95 leading-relaxed">
                 {visionText}
               </p>
@@ -155,7 +155,7 @@ export function About() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Certifications</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               Registrations &amp; Credentials
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
@@ -196,12 +196,12 @@ export function About() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Leadership</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               The Team
             </h2>
-            <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
+            {/* <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
               JAD Consultants is led by Darshan Kumar Bhatt, a civil engineer based in Haldwani.
-            </p>
+            </p> */}
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -227,7 +227,7 @@ export function About() {
                   {/* Avatar */}
                   <div className="relative mb-6">
                     <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-[#C9974D] via-[#DEB06A] to-[#B8863C] flex items-center justify-center shadow-xl shadow-[#C9974D]/30 group-hover:shadow-[#C9974D]/50 transition-all duration-300 ring-4 ring-[#C9974D]/10 group-hover:ring-[#C9974D]/30">
-                      <span className="font-['Playfair_Display'] font-bold text-3xl text-white">{initials}</span>
+                      <span className="font-['Inter'] font-bold text-3xl text-white">{initials}</span>
                     </div>
                     {/* Role icon badge */}
                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-9 h-9 bg-[#141210] border-2 border-[#C9974D]/40 rounded-full flex items-center justify-center group-hover:border-[#C9974D]/80 transition-all duration-300">
@@ -241,7 +241,7 @@ export function About() {
 
                   {/* Info */}
                   <div className="text-center mt-4">
-                    <h3 className="font-['Playfair_Display'] font-bold text-lg text-white mb-1 group-hover:text-[#DEB06A] transition-colors duration-300">{member.name}</h3>
+                    <h3 className="font-['Inter'] font-bold text-lg text-white mb-1 group-hover:text-[#DEB06A] transition-colors duration-300">{member.name}</h3>
                     <div className="inline-block px-3 py-0.5 bg-[#C9974D]/15 border border-[#C9974D]/25 rounded-full mb-3">
                       <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs">{member.role}</span>
                     </div>
@@ -270,7 +270,7 @@ export function About() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Equipment Fleet</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               Equipment We Work With
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
@@ -288,7 +288,7 @@ export function About() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-[#0D0C0B]/60 backdrop-blur-sm border border-[#C9974D]/12 rounded-xl p-6 text-center hover:border-[#C9974D]/35 hover:-translate-y-1 shadow-md shadow-black/15 hover:shadow-xl hover:shadow-black/25 transition-all duration-300"
               >
-                <div className="font-['Playfair_Display'] font-bold text-3xl text-[#C9974D] mb-2">{item.count}</div>
+                <div className="font-['Inter'] font-bold text-3xl text-[#C9974D] mb-2">{item.count}</div>
                 <div className="font-['Inter'] text-sm text-[#A8A29E]/90">{item.name}</div>
               </motion.div>
             ))}
@@ -323,7 +323,7 @@ export function About() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Safety Standards</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               Site Safety
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
@@ -360,7 +360,7 @@ export function About() {
             >
               <div className="bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-xl p-8 text-center shadow-lg shadow-[#C9974D]/15">
                 <Shield className="w-12 h-12 text-white mx-auto mb-4" />
-                <div className="font-['Playfair_Display'] font-bold text-4xl text-white mb-2">All</div>
+                <div className="font-['Inter'] font-bold text-4xl text-white mb-2">All</div>
                 <div className="font-['Inter'] text-white/90">Projects Insured</div>
               </div>
             </motion.div>

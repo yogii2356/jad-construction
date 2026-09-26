@@ -245,7 +245,7 @@ export function ServiceDetail() {
   if (!service) {
     return (
       <div className="pt-40 pb-20 text-center text-white h-screen bg-[#0D0C0B] flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-['Playfair_Display'] mb-4">Service not found</h1>
+        <h1 className="text-4xl font-['Inter'] mb-4">Service not found</h1>
         <Link to="/services" className="text-[#C9974D] hover:underline font-['Inter']">
           ← Return to Services
         </Link>
@@ -283,7 +283,7 @@ export function ServiceDetail() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Service Detail</span>
             </div>
-            <h1 className="font-['Playfair_Display'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+            <h1 className="font-['Inter'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               {service.title}
             </h1>
             <p className="font-['Inter'] text-xl text-[#A8A29E] leading-relaxed mb-8">
@@ -308,7 +308,7 @@ export function ServiceDetail() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-['Playfair_Display'] font-bold text-3xl sm:text-4xl text-white mb-6">
+            <h2 className="font-['Inter'] font-bold text-3xl sm:text-4xl text-white mb-6">
               Detailed Overview
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] leading-relaxed mb-10">
@@ -317,7 +317,7 @@ export function ServiceDetail() {
 
             {servicePath === 'structure-analysis-and-design' && (
               <div className="mt-8 bg-[#0D0C0B]/90 border border-[#C9974D]/25 rounded-2xl p-6 sm:p-8 shadow-2xl">
-                <h3 className="font-['Playfair_Display'] font-bold text-2xl text-white mb-2 text-center">
+                <h3 className="font-['Inter'] font-bold text-2xl text-white mb-2 text-center">
                   Structural Design & Analysis Framework
                 </h3>
                 <p className="font-['Inter'] text-sm text-[#A8A29E] text-center mb-8">
@@ -357,28 +357,6 @@ export function ServiceDetail() {
                     </div>
                   </div>
                 </div>
-
-                {/* Explanation text */}
-                <div className="mt-8 space-y-6 font-['Inter'] text-sm sm:text-base text-[#A8A29E]">
-                  <div>
-                    <h4 className="font-['Playfair_Display'] font-semibold text-white text-lg mb-2">1. Structural Design Phase</h4>
-                    <p className="leading-relaxed">Translating architectural blueprints into rigorous 3D computational structural models, identifying all static, dynamic, wind, and seismic forces acting on the building in compliance with relevant IS codes.</p>
-                  </div>
-                  <div>
-                    <h4 className="font-['Playfair_Display'] font-semibold text-white text-lg mb-2">2. Load Path Analysis & Vector Summation ($\Sigma F = 0, \Sigma M = 0$)</h4>
-                    <p className="leading-relaxed">Tracking force transfer through continuous load paths (Slabs $\rightarrow$ Beams $\rightarrow$ Columns $\rightarrow$ Footings $\rightarrow$ Soil) while enforcing strict static equilibrium laws ($\Sigma F = 0, \Sigma M = 0$) to ensure zero net unbalanced forces or rotational moments.</p>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                    <div className="bg-[#141210] p-5 rounded-xl border border-[#C9974D]/15">
-                      <h5 className="font-['Playfair_Display'] font-semibold text-white text-base mb-2">Strength Limit States (ULS)</h5>
-                      <p className="text-xs sm:text-sm leading-relaxed text-[#A8A29E]/90">Prevents structural failure and catastrophic collapse. Validates <strong>Yield Strength</strong> under maximum stress, <strong>Buckling Resistance</strong> for tall compression members, and <strong>Shear & Flexural Capacity</strong> against heavy bending and internal forces.</p>
-                    </div>
-                    <div className="bg-[#141210] p-5 rounded-xl border border-[#C9974D]/15">
-                      <h5 className="font-['Playfair_Display'] font-semibold text-white text-base mb-2">Serviceability Limit States (SLS)</h5>
-                      <p className="text-xs sm:text-sm leading-relaxed text-[#A8A29E]/90">Ensures long-term asset performance and daily occupant comfort. Controls <strong>Elastic Deflection Limits</strong> to eliminate floor sagging, restricts <strong>Vibrational Resonance</strong>, and strictly manages <strong>Crack Widths</strong> to prevent internal rebar corrosion.</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             )}
           </motion.div>
@@ -397,7 +375,7 @@ export function ServiceDetail() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Our Process</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               Construction Process
             </h2>
             <p className="font-['Inter'] text-lg text-[#A8A29E] max-w-2xl mx-auto">
@@ -417,9 +395,9 @@ export function ServiceDetail() {
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-full flex items-center justify-center flex-shrink-0 shadow-md shadow-[#C9974D]/10">
-                    <span className="font-['Playfair_Display'] font-bold text-white">{index + 1}</span>
+                    <span className="font-['Inter'] font-bold text-white">{index + 1}</span>
                   </div>
-                  <h3 className="font-['Playfair_Display'] font-semibold text-xl text-white">{step.step}</h3>
+                  <h3 className="font-['Inter'] font-semibold text-xl text-white">{step.step}</h3>
                 </div>
                 <p className="font-['Inter'] text-[#A8A29E] text-sm leading-relaxed">{step.desc}</p>
               </motion.div>
@@ -440,7 +418,7 @@ export function ServiceDetail() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">Technology</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               {service.techTitle || 'Equipment and Techniques'}
             </h2>
           </motion.div>
@@ -475,7 +453,7 @@ export function ServiceDetail() {
             <div className="inline-block px-4 py-1.5 bg-[#C9974D]/10 border border-[#C9974D]/25 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs uppercase tracking-wider">FAQ</span>
             </div>
-            <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
               Frequently Asked Questions
             </h2>
           </motion.div>
@@ -493,7 +471,7 @@ export function ServiceDetail() {
                 <div className="flex items-start gap-4">
                   <HelpCircle className="w-6 h-6 text-[#C9974D] flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-['Playfair_Display'] font-semibold text-xl text-white mb-2">{faq.q}</h3>
+                    <h3 className="font-['Inter'] font-semibold text-xl text-white mb-2">{faq.q}</h3>
                     <p className="font-['Inter'] text-[#A8A29E]/90">{faq.a}</p>
                   </div>
                 </div>
@@ -514,7 +492,7 @@ export function ServiceDetail() {
           >
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-10"></div>
             <div className="relative z-10">
-              <h2 className="font-['Playfair_Display'] font-bold text-4xl sm:text-5xl text-white mb-4">
+              <h2 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-4">
                 Interested in This Service?
               </h2>
               <p className="font-['Inter'] text-xl text-[#A8A29E] mb-8 max-w-2xl mx-auto">

@@ -14,12 +14,12 @@ export function NotFound() {
           transition={{ duration: 0.8 }}
         >
           <div className="mb-8">
-            <span className="font-['Poppins'] font-bold text-9xl sm:text-[12rem] text-transparent bg-clip-text bg-gradient-to-r from-[#F59E0B] to-[#D97706]">
+            <span className="font-['Inter'] font-bold text-9xl sm:text-[12rem] text-transparent bg-clip-text bg-gradient-to-r from-[#F59E0B] to-[#D97706]">
               404
             </span>
           </div>
 
-          <h1 className="font-['Poppins'] font-bold text-4xl sm:text-5xl text-white mb-6">
+          <h1 className="font-['Inter'] font-bold text-4xl sm:text-5xl text-white mb-6">
             Page Not Found
           </h1>
 

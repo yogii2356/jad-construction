@@ -39,7 +39,7 @@ export function Careers() {
             <div className="inline-block px-4 py-2 bg-[#C9974D]/10 border border-[#C9974D]/20 rounded-full mb-6">
               <span className="font-['Inter'] font-semibold text-[#C9974D] text-sm">Join Our Team</span>
             </div>
-            <h1 className="font-['Poppins'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
+            <h1 className="font-['Inter'] font-bold text-5xl sm:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               Join
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#C9974D] to-[#B8863C]">
                 JAD Consultants
@@ -61,7 +61,7 @@ export function Careers() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-['Poppins'] font-bold text-4xl text-white mb-4">
+            <h2 className="font-['Inter'] font-bold text-4xl text-white mb-4">
               Why Work With Us
             </h2>
           </motion.div>
@@ -77,7 +77,7 @@ export function Careers() {
               <div className="w-14 h-14 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-lg flex items-center justify-center mb-6">
                 <Briefcase className="w-7 h-7 text-white" />
               </div>
-              <h3 className="font-['Poppins'] font-bold text-xl text-white mb-4">Hands-On Experience</h3>
+              <h3 className="font-['Inter'] font-bold text-xl text-white mb-4">Hands-On Experience</h3>
               <p className="font-['Inter'] text-gray-400 leading-relaxed">
                 Work directly on real projects from planning through construction, not sidelined on paperwork.
               </p>
@@ -93,7 +93,7 @@ export function Careers() {
               <div className="w-14 h-14 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-lg flex items-center justify-center mb-6">
                 <Users className="w-7 h-7 text-white" />
               </div>
-              <h3 className="font-['Poppins'] font-bold text-xl text-white mb-4">Small Team, Real Responsibility</h3>
+              <h3 className="font-['Inter'] font-bold text-xl text-white mb-4">Small Team, Real Responsibility</h3>
               <p className="font-['Inter'] text-gray-400 leading-relaxed">
                 Being a small operation means your work is visible and matters - not lost in a large hierarchy.
               </p>
@@ -109,7 +109,7 @@ export function Careers() {
               <div className="w-14 h-14 bg-gradient-to-br from-[#C9974D] to-[#B8863C] rounded-lg flex items-center justify-center mb-6">
                 <TrendingUp className="w-7 h-7 text-white" />
               </div>
-              <h3 className="font-['Poppins'] font-bold text-xl text-white mb-4">Growing With Us</h3>
+              <h3 className="font-['Inter'] font-bold text-xl text-white mb-4">Growing With Us</h3>
               <p className="font-['Inter'] text-gray-400 leading-relaxed">
                 We're early in our growth as JAD Consultants. Joining now means growing into bigger roles as the company does.
               </p>
@@ -127,7 +127,7 @@ export function Careers() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="font-['Poppins'] font-bold text-3xl text-white mb-8 text-center">
+              <h2 className="font-['Inter'] font-bold text-3xl text-white mb-8 text-center">
                 What We Look For
               </h2>
               <ul className="space-y-4 font-['Inter'] text-lg text-gray-300">
@@ -164,7 +164,7 @@ export function Careers() {
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12"
             >
               <div className="text-center mb-10">
-                <h2 className="font-['Poppins'] font-bold text-3xl text-white mb-4">
+                <h2 className="font-['Inter'] font-bold text-3xl text-white mb-4">
                   Interested in Joining?
                 </h2>
                 <p className="font-['Inter'] text-gray-400">
