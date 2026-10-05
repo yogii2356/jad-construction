@@ -3,6 +3,8 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
+
 function figmaAssetResolver() {
   return {
     name: 'figma-asset-resolver',
@@ -20,12 +22,31 @@ export default defineConfig({
 
   plugins: [
     figmaAssetResolver(),
+    ViteImageOptimizer({
+      jpg: { quality: 70 },
+      jpeg: { quality: 70 },
+      png: { quality: 70 },
+      webp: { quality: 70 },
+    }),
 
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
+
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        }
+      }
+    }
+  },
 
   resolve: {
     alias: {

@@ -16,6 +16,9 @@ import hjdc02 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.53
 import hjdc03 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.53.42.jpeg';
 import hjdc04 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.53.42 (1).jpeg';
 import hjdc05 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.53.43.jpeg';
+import hjdc06 from '../../assets/construction/WhatsApp Image 2026-10-03 at 19.47.57.jpeg';
+import hjdc07 from '../../assets/construction/WhatsApp Image 2026-10-03 at 19.47.58 (1).jpeg';
+import hjdc08 from '../../assets/construction/WhatsApp Image 2026-10-03 at 19.47.58.jpeg';
 import pb01 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.52.12.jpeg';
 import pb02 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.52.12 (1).jpeg';
 import pb03 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.52.13.jpeg';
@@ -23,6 +26,10 @@ import pb04 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.52.1
 import pb05 from '../../assets/construction/WhatsApp Image 2026-08-24 at 18.52.13 (2).jpeg';
 import pb06 from '../../assets/construction/WhatsApp Image 2026-08-31 at 14.53.01.jpeg';
 import pb07 from '../../assets/construction/WhatsApp Image 2026-08-31 at 14.53.02.jpeg';
+import pb08 from '../../assets/construction/WhatsApp Image 2026-09-26 at 19.44.21.jpeg';
+import pb09 from '../../assets/construction/WhatsApp Image 2026-09-26 at 19.44.22 (1).jpeg';
+import pb10 from '../../assets/construction/WhatsApp Image 2026-09-26 at 19.44.22.jpeg';
+import pb11 from '../../assets/construction/WhatsApp Image 2026-09-26 at 19.44.23.jpeg';
 import gym01 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-30 at 15.02.56.jpeg';
 import gym02 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-30 at 15.02.57.jpeg';
 import gym03 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-30 at 15.02.58.jpeg';
@@ -33,6 +40,12 @@ import hjdrint01 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-
 import hjdrint02 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-24 at 18.52.18.jpeg';
 import hjdrint03 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-24 at 18.52.19.jpeg';
 import hjdrint04 from '../../assets/3D_interiror_and_design/WhatsApp Image 2026-08-24 at 18.52.20.jpeg';
+
+// Structure & Design Imports
+import aia01 from '../../assets/structure and design/Ahemdabad International Airport/Ahemdabad International Airport/Slide1.JPG';
+import aia02 from '../../assets/structure and design/Ahemdabad International Airport/Ahemdabad International Airport/Slide2.JPG';
+import aia03 from '../../assets/structure and design/Ahemdabad International Airport/Ahemdabad International Airport/Slide3.JPG';
+import aia04 from '../../assets/structure and design/Ahemdabad International Airport/Ahemdabad International Airport/Slide4.jpg';
 
 // New Project Imports
 import np01 from '../../assets/construction/WhatsApp Image 2026-09-07 at 10.08.42.jpeg';
@@ -71,6 +84,15 @@ export type Category = (typeof CATEGORIES)[number];
 
 export const projectsData: ProjectItem[] = [
   {
+    id: 'aia-01',
+    title: 'Ahemdabad International Airport',
+    category: 'Structural Analysis & Design',
+    location: 'Ahmedabad, Gujarat',
+    year: '2026',
+    images: [aia01, aia02, aia03, aia04],
+    description: 'Structural analysis and design presentation for Ahemdabad International Airport — a large-scale infrastructure project showcasing advanced structural engineering, load analysis, and precision design for one of India\'s key aviation hubs.',
+  },
+  {
     id: 'hjdrint-01',
     title: 'Hotel Jageshwar Dham & Restaurant',
     category: '3D Interior & Exterior Design',
@@ -94,7 +116,7 @@ export const projectsData: ProjectItem[] = [
     category: 'Construction',
     location: 'Haldwani',
     year: '2026',
-    images: [hjdc01, hjdc02, hjdc03, hjdc04, hjdc05],
+    images: [hjdc01, hjdc02, hjdc03, hjdc04, hjdc05, hjdc06, hjdc07, hjdc08],
     description: 'On-site construction progress of Hotel Jageshwar Dham & Restaurant — a premium multi-storey hospitality complex built with precision and quality craftsmanship.',
   },
   {
@@ -103,7 +125,7 @@ export const projectsData: ProjectItem[] = [
     category: 'Construction',
     location: 'Rampur Road, Near Panchayat Ghar',
     year: '2026',
-    images: [pb01, pb02, pb03, pb04, pb05, pb06, pb07],
+    images: [pb01, pb02, pb03, pb04, pb05, pb06, pb07, pb08, pb09, pb10, pb11],
     description: 'Construction progress of Pant Bhawan — a well-planned residential building on Rampur Road, near Panchayat Ghar, built with quality construction practices.',
   },
   {
@@ -118,7 +140,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'hjdr-01',
     title: 'Hotel Jageshwar Dham & Restaurant',
-    category: 'Architecture Planning',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [hjdr01, hjdr02, hjdr03],
@@ -127,7 +149,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'dc-01',
     title: 'Hillside Residential Villa',
-    category: 'Architecture Planning',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [dc01, dc02],
@@ -136,7 +158,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'dc-03',
     title: 'Modern Residential Elevation',
-    category: 'Architecture Planning',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [dc03],
@@ -145,7 +167,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'dc-04',
     title: 'Two story modern villa with car porch',
-    category: 'Architecture Planning',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [dc04, dc10],
@@ -154,7 +176,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'dc-05',
     title: 'Two-Story Villa Concept',
-    category: 'Architecture and Design',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [dc05],
@@ -163,7 +185,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'dc-06',
     title: 'Duplex villa',
-    category: 'Architecture Planning',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [dc06],
@@ -172,7 +194,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'dc-07',
     title: 'Mixed-Use Apartment & Retail Complex',
-    category: 'Architecture Planning',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [dc07],
@@ -181,7 +203,7 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'dc-08',
     title: 'Twin Villa Compound',
-    category: 'Architecture Planning',
+    category: '3D Interior & Exterior Design',
     location: 'Haldwani',
     year: '2026',
     images: [dc08],
