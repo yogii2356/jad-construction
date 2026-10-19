@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Award, Users, Building2, Shield, Target, Zap, CheckCircle2, TrendingUp, HardHat, Ruler, Palette, Home } from 'lucide-react';
+import { Award, Users, Building2, Shield, Target, Zap, CheckCircle2, TrendingUp, HardHat, Ruler, Palette, Home, Briefcase } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { aboutDescription, coreDisciplines, approachText, visionText, team, timeline, certifications } from '../data/aboutData';
 
@@ -204,14 +204,19 @@ export function About() {
             </p> */}
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {team.map((member, index) => {
               const roleIcons: Record<string, React.ReactNode> = {
                 'Structural Engineer': <HardHat className="w-8 h-8 text-white" />,
                 'Interior Designer': <Palette className="w-8 h-8 text-white" />,
                 'Architect': <Home className="w-8 h-8 text-white" />,
+                'Project Manager': <Briefcase className="w-8 h-8 text-white" />,
               };
-              const initials = member.name.split(' ').map((n: string) => n[0]).join('').slice(0, 2);
+              const cleanName = member.name.replace(/^Er\.?\s+/i, '');
+              const nameParts = cleanName.trim().split(/\s+/);
+              const initials = nameParts.length >= 2
+                ? `${nameParts[0][0]}${nameParts[nameParts.length - 1][0]}`.toUpperCase()
+                : cleanName.slice(0, 2).toUpperCase();
               return (
                 <motion.div
                   key={member.name}
@@ -219,34 +224,38 @@ export function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.12 }}
-                  className="group relative bg-[#141210]/70 backdrop-blur-sm border border-[#C9974D]/12 rounded-2xl p-6 hover:border-[#C9974D]/50 hover:-translate-y-2 shadow-md shadow-black/20 hover:shadow-2xl hover:shadow-[#C9974D]/10 transition-all duration-400 cursor-default overflow-hidden"
+                  className="group relative bg-[#141210]/70 backdrop-blur-sm border border-[#C9974D]/12 rounded-2xl p-6 hover:border-[#C9974D]/50 hover:-translate-y-2 shadow-md shadow-black/20 hover:shadow-2xl hover:shadow-[#C9974D]/10 transition-all duration-400 cursor-default overflow-hidden flex flex-col justify-between"
                 >
                   {/* Subtle background glow on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-[#C9974D]/0 to-[#C9974D]/0 group-hover:from-[#C9974D]/5 group-hover:to-transparent rounded-2xl transition-all duration-500 pointer-events-none" />
 
-                  {/* Avatar */}
-                  <div className="relative mb-6">
-                    <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-[#C9974D] via-[#DEB06A] to-[#B8863C] flex items-center justify-center shadow-xl shadow-[#C9974D]/30 group-hover:shadow-[#C9974D]/50 transition-all duration-300 ring-4 ring-[#C9974D]/10 group-hover:ring-[#C9974D]/30">
-                      <span className="font-['Inter'] font-bold text-3xl text-white">{initials}</span>
-                    </div>
-                    {/* Role icon badge */}
-                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-9 h-9 bg-[#141210] border-2 border-[#C9974D]/40 rounded-full flex items-center justify-center group-hover:border-[#C9974D]/80 transition-all duration-300">
-                      <div className="w-5 h-5 text-[#C9974D]">
-                        {member.role === 'Structural Engineer' && <HardHat className="w-5 h-5" />}
-                        {member.role === 'Interior Designer' && <Palette className="w-5 h-5" />}
-                        {member.role === 'Architect' && <Home className="w-5 h-5" />}
+                  {/* Top content */}
+                  <div>
+                    {/* Avatar */}
+                    <div className="relative mb-6">
+                      <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-[#C9974D] via-[#DEB06A] to-[#B8863C] flex items-center justify-center shadow-xl shadow-[#C9974D]/30 group-hover:shadow-[#C9974D]/50 transition-all duration-300 ring-4 ring-[#C9974D]/10 group-hover:ring-[#C9974D]/30">
+                        <span className="font-['Inter'] font-bold text-3xl text-white">{initials}</span>
+                      </div>
+                      {/* Role icon badge */}
+                      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-9 h-9 bg-[#141210] border-2 border-[#C9974D]/40 rounded-full flex items-center justify-center group-hover:border-[#C9974D]/80 transition-all duration-300">
+                        <div className="w-5 h-5 text-[#C9974D] flex items-center justify-center">
+                          {member.role === 'Structural Engineer' && <HardHat className="w-5 h-5" />}
+                          {member.role === 'Interior Designer' && <Palette className="w-5 h-5" />}
+                          {member.role === 'Architect' && <Home className="w-5 h-5" />}
+                          {member.role === 'Project Manager' && <Briefcase className="w-5 h-5" />}
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Info */}
-                  <div className="text-center mt-4">
-                    <h3 className="font-['Inter'] font-bold text-lg text-white mb-1 group-hover:text-[#DEB06A] transition-colors duration-300">{member.name}</h3>
-                    <div className="inline-block px-3 py-0.5 bg-[#C9974D]/15 border border-[#C9974D]/25 rounded-full mb-3">
-                      <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs">{member.role}</span>
+                    {/* Info */}
+                    <div className="text-center mt-4">
+                      <h3 className="font-['Inter'] font-bold text-lg text-white mb-1 group-hover:text-[#DEB06A] transition-colors duration-300">{member.name}</h3>
+                      <div className="inline-block px-3 py-0.5 bg-[#C9974D]/15 border border-[#C9974D]/25 rounded-full mb-3">
+                        <span className="font-['Inter'] font-semibold text-[#C9974D] text-xs">{member.role}</span>
+                      </div>
+                      <p className="font-['Inter'] text-[#A8A29E]/80 text-sm mb-1">{member.education}</p>
+                      <p className="font-['Inter'] text-[#A8A29E]/60 text-xs leading-relaxed">{member.experience}</p>
                     </div>
-                    <p className="font-['Inter'] text-[#A8A29E]/80 text-sm mb-1">{member.education}</p>
-                    <p className="font-['Inter'] text-[#A8A29E]/60 text-xs leading-relaxed">{member.experience}</p>
                   </div>
 
                   {/* Animated bottom border on hover */}

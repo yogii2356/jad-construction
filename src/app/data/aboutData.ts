@@ -40,6 +40,12 @@ export const team = [
     education: 'B.Arch',
     experience: '5+ Years of Experience in Architectural design.',
     role: 'Architect',
+  }, 
+  {
+    name: 'Er. Sunny Parashar',
+    education: 'B. Tech (Civil)',
+    experience: '11+ Years of Experience in Project Management.',
+    role: 'Project Manager',
   },
 ];
 
